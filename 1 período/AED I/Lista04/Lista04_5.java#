@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Lista04_5
+{
+   public static void main(String[]args)
+   {
+      int n,
+          soma=0;
+      double media;    
+      Scanner s=new Scanner(System.in);
+      System.out.println("Digite quantos numeros devem ser somados");
+      n=s.nextInt();
+      do      
+      {
+         System.out.println(n);
+        soma=n+soma;
+        media=(double)soma/(double)n;
+         n=n-1;
+      }while(n>0);
+      System.out.println(+n);
+   }
+}                
