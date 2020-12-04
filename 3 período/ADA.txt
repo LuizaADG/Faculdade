@@ -1,0 +1,5 @@
+Aluno 144 --- [Q1 - A/A][Q2 - C/C][Q3 - E/E][Q4 - B/E][Q5 - A/A][Q6 - C/E][Q7 - D/D][Q8 - B/B][Q9 -
+E/E][Q10 - A/A][Q11 - B/E][Q12 - E/A][Q13 - B/B][Q14 - D/D][Q15 - A/A][Q16 - C/C][Q17 - B/C][Q18 -
+B/B][Q19 - D/D][Q20 - D/D][Q21 - C/C][Q22 - E/E][Q23 - C/C][Q24 - E/C][Q25 - C/A][Q26 - B/A][Q27 -
+A/A][Q28 - A/A][Q29 - D/D][Q30 - A/A][Q31 - E/C][Q32 - C/B][Q33 - A/D][Q34 - D/C][Q35 - B/D][Q36 -
+D/B][Q37 - D/A][Q38 - E/E][Q39 - A/C][Q40 - D/B]--- (acertos 23)

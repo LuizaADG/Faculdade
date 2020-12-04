@@ -1,0 +1,13 @@
+1) O trabalho do nosso grupo se baseia na detecção de possíveis problemas auditivos através de uma aplicação interativa com o usuário.
+Inspirado na apresentação do trabalho da Luana sobre detecção de dautonismo, a idéia é desenvolver uma aplicação a partir do Scratch onde ondas sonoras seriam emitidas em diferentes frequências e distribuição de lados, e a partir de respostas do usuário aos exercicios propostos, indicar o resultado das respostas, indicar se existe um problema,  e se existe a necessidade eminente de procurar ajuda profissional.
+
+2) É possível desenvolver uma aplicação que possa ajudar as pessoas a identificar problemas na audição?
+
+3) A proposta é a criação de uma aplicação digital, de fácil acesso, para detecção de problemas auditivos, uma vez que não é comum nem difundido aplicações com esse fim. 
+
+4) Normalmente as pessoas apenas procuram por ajuda quando o problema já atinge o dia a dia. Já um exercicio como esse ajudaria na detecção em problemas pequenos ou no início. Quando a pessoa se informa e tem consciência de um problema prévio, é mais fácil o entendimento.
+
+5) A plataforma escolhida para desenvolver a aplicação é o Scratch. Também será utilizado um computador para abrigar e executar o programa e o audio, e fones de ouvido.
+Serão utilizados estudos fonoaudiológicos para:
+	I) indicar qual a normalidade que um ser humano de determinada faixa etária escuta, e assim comparar com os resultados adquiridos no teste.
+	II) doenças ou problemas previamente existentes que podem ser detectados por esse tipo de teste.
