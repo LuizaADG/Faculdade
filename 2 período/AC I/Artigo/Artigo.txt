@@ -1,0 +1,49 @@
+Luiza Ávila-587490
+1)
+FREITAS, Tiago Tobias; PASQUALIANOTO,Thiago Luiz; LEÃO,Juliano Carlos. O CPLD (Dispositivo Complexo de Lógica Programação aplicado em automação industrial).In:Feira SENAI Paulista de Inovação
+Tecnológica - INOVASENAI 2005,2005. Disponível em:http://www.optotech.net.br/msx/cpld/11-55-1-PB.pdf
+2)
+a- Necessitam de um processo de fabricação especial, requerindo máscaras específicas para cada projeto. 
+Isso acarreta em altos custos de projeto e um longo tempo de desenvolvimento para esse tipo de implementação.
+Em caso de grandes implementações esse alto custo é amortizado. 
+
+b-  Baixo custo, capacidade muito reduzida e alto desempenho. 
+A difícil aumento da capacidade da arquitetura, devido à estrutura dos planos lógicos programáveis aumentarem muito rapidamente à
+medida que se aumenta o numero de entradas.
+
+c- alta durabilidade(mesmo em ambientes agressivos), alta versatilidade (pode ser re-configurado cercade 1.000.000 de vezes), alta velocidade de resposta (pode responder na ordem de nano
+segundos) e facilidade de programação no ambiente windows isso com a mesma eficiência dos controladores já existentes no mercado. 
+Organizam arranjos lógicos entre as macro células, dispensando qualquer tipo de processamento do sinal de entrada, ou seja, um sinal na entrada gera um sinal na saída. 
+
+d-  Grande arranjo de células configuráveis (ou blocos lógicos) contidos em um único chip. Cada uma dessas células contem certa capacidade computacional para implementar funções lógicas e/ou realizar
+roteamento para permitir a comunicação entre as células.
+Não possuem planos de portas OR ou AND. Em vez disso, estes componentes consistem de um grande arranjo de células configuráveis (ou blocos lógicos) que podem ser utilizadas para a implementação de funções lógicas.  
+Possui três tipos principais de recursos: blocos lógicos, blocos de entrada e saída (I/O), e chaves de interconexão. Os blocos lógicos formam um arranjo bi-dimensional, e as
+chaves de interconexão são organizadas como canais de roteamento horizontal e vertical entre as linhas e colunas de blocos lógicos. Estes canais de roteamento
+possuem chaves programáveis que permitem conectar os blocos lógicos de maneira conveniente, em função das necessidades de cada projeto.
+Por não possuir uma arquitetura interna, FPGAs possuem capacidades maiores de suportar circuitos lógicos mais complexos. 
+3)
+PROM 
+chip programável pelo usuário;
+implementar circuitos lógicos; 
+As linhas de endereço eram utilizadas como entradas do circuito lógico, e as linhas de dados como saídas desses circuitos; 
+As funções lógicas raramente requerem mais que alguns termos de produto; 
+contêm um decodificador completo para seus endereços de entradas; 
+arquitetura ineficiente para realização de circuitos lógicos.
+
+PLA 
+chip programável pelo usuário;
+especificamente para implementação de circuitos lógicos;
+Dois níveis de portas lógicas: um plano de portas 
+7 wired-AND seguido por um plano de portas wired-OR; 
+Cada saída do plano AND pode corresponder a qualquer termo produto das entradas. Da mesma forma, cada saída do plano OR pode ser configurada para produzir a soma lógica de quaisquer saídas do plano AND;
+Adequado para implementações de funções lógicas na forma de soma de produtos;
+Alto custo de fabricação e significativos atrasos de propagação dos sinais elétricos. 
+
+PAL
+chip programável pelo usuário;
+especificamente implementar circuitos lógicos;
+único nível de programação, constituindo de um plano de portas AND programáveis que alimenta um plano OR fixo;
+Contem flip-flops conectados as saídas das portas OR para que circuitos seqüências possam ser implementados;
+Adequado para implementações de funções lógicas na forma de soma de produtos;
+Custos mais baixos e melhor desempenho.   
