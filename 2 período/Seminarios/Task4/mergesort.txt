@@ -1,0 +1,8 @@
+mergesort
+
+threads-1        threads-2        threads/2
+
+Tempo: 0.229     Tempo: 0.243     Tempo: 0.243
+
+Result: Sorted   Result: Sorted   Result: Sorted
+
