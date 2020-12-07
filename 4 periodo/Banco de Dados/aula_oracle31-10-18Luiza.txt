@@ -1,0 +1,139 @@
+Tabelas banco
+Select table_name from user_tables;
+
+Autorização
+Grant Select, Update, Delete, References on autor to user;
+ex.: Select * from ArturParadizi.Autor;
+	 Create Pais as Select * from ArturParadizi.Pais;
+
+1)Incluir uma nova coluna
+1.1)
+	    Create table AlterTeste
+		(codTes int not null, NomTes char(20) not null);
+1.2)
+		Insert into AlterTeste
+		Values (1,'Primeiro');
+		
+		Insert into AlterTeste
+		Values (2,'Segundo');
+		
+		Insert into AlterTeste
+		Values (3,'Terceiro');
+		
+		commit;
+		
+		Select * from AlterTeste;
+1.3)
+		Desc AlterTeste;	
+1.4)
+		Alter table AlterTeste
+		add QteTes int;
+1.5)
+		Desc AlterTeste;
+1.6)
+        Update AlterTeste
+		set QteTes = 1	
+		where codTes =3;
+		
+		Update AlterTeste
+		set QteTes = 2	
+		where codTes =2;
+		
+		Update AlterTeste
+		set QteTes = 3	
+		where codTes =1;
+1.7)
+		Select * from AlterTeste;
+1.8)Alterando característica
+		
+		Alter table AlterTeste
+		modify QteTes not null;
+		
+		Desc AlterTeste;
+		
+2) Para aumentar o tamanho de uma coluna
+		
+2.1) 
+		Desc AlterTeste;
+		
+		Alter table AlterTeste
+		modify NomTes char (30);
+		
+		Desc AlterTeste;
+		
+2.2)Diminuindo o tamanho de uma coluna
+
+		Create table Aux
+		(codTes int not null, nomTes char (20) not null, QteTes int not null);
+		
+		Desc Aux;
+2.3)		
+		Insert into Aux
+			(Select codTes,
+			substr(NomTes,1,20),
+			QteTes from AlterTeste);
+			
+			Select * from Aux;
+			
+			//Select substr (NomAut,2,5) from Autor;//retirar letra de autor
+		
+2.4)    Drop table AlterTeste;
+		Desc AlterTeste;//erro objeto inexistente
+
+2.5)
+		Rename Aux to AlterTeste;
+		Desc AlterTeste;
+		
+3) Incluindo uma PK
+			
+		Alter table AlterTeste
+		add constraint PK_Teste
+		primary key (codTes);
+		
+4)Incluindo uma FK
+
+		Alter table AlterTeste
+		add constraint FK_Teste_Pais
+		foreign key (codTes)
+		references Pais;
+		
+5)Renomeando uma coluna 
+
+		Desc  AlterTeste;		
+________________________________________________________________________________________________________________________________________________________________
+Exercícios
+Listar NomAut, NomPais
+a) Cross Join
+
+	Select A.NomAut,P.NomPais 
+	from Autor A, Pais P
+	where A.codPais=P.codPais
+	Order by A.NomAut;
+		
+b) Inner Join
+
+    Select Autor.NomAut,Pais.NomPais
+    from Autor inner join Pais
+	on Pais.NomPais='Brasil'
+	and Autor.CodPais=Pais.CodPais
+	Order by Autor.NomAut;
+		
+c) Natural Join
+		
+	Select NomAut,NomPais
+    from Pais natural join Autor
+ 	Order by NomAut;
+	 
+	Select CodTes,NomAut from AlterTeste natural join Autor; //erro pois não há colunas iguais
+	
+d) Outer Join
+	
+	Select Pais.NomPais, Autor. NomAut
+	from Pais left join Autor on Pais.CodPais=Autor.CodPais
+	Order by Pais.NomPais, Autor.NomAut;
+	
+	commit;
+	
+	Select NomPais from Pais where CodPais in (Select CodPais from Autor);//Está errado
+	Select NomPais from Pais where exists (Select * from Autor where CodPais = P.codPais);
+			

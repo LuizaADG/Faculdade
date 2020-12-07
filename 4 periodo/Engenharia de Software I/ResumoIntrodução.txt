@@ -1,0 +1,49 @@
+problemas
+produto: .mudanças de requisitos,al formulação ou entendimento;
+. esticar o cronograma por causa de mais tarefas
+processo: .otimismo no cronograma
+. sem gerência de risco
+.pouco planejamento
+.problemas de tempo, abandono do planejamento
+.design ruim
+tecnologia: . acreditar que gnha muito com nova tecnologia
+.troca de ferramentas no meio do processo
+.falta de controle do código fonte
+Características software:
+. não se desgasta
+. maioria construída por encomenda
+Natureza do software:
+produto:
+. transmite, adquire, produz, modifica informação
+veículo do produto:
+.controla outros
+.facilita a cosntrução de outros
+.viabiliza comunicação de dados
+Aplicações:
+de sistemas:
+.apoiar outros programas
+.interagir com hardware
+de tempo real:
+.monitora, analisa e controla eventos reais
+de aplicação:
+. amplamente difundido
+.dados estruturados que facilitam a gestão da org. e vida das pessoas
+científico e de engenharia:
+.trabalham e processam números
+embutido:
+.na memória só de leitura
+.controle de produtos e sistemas no mercado industrial
+para linhas de produto:
+.textos, planilhas, gerenciamento de dados
+.interface sempre inovadora
+Lembretes importantes para fazer o software:
+.entender o problema
+.não complicar a vida do usuário
+.projetar
+.boa qualidade
+.fácil de manter
+Essência da prática:
+.compreender o problema
+.planejar a solução
+.execute o plano
+.examine o resultado

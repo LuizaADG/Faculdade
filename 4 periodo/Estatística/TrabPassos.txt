@@ -1,0 +1,34 @@
+#desvio padrao
+> sd (vendas)
+#vendedor excepcional
+> mean(vendas)+ (2*sd(vendas))
+> #vender menos
+> quantile (vendas,type=2)
+> summary(vendas)[2]
+#Menor,maior, terceiro quartil
+> min(Teste)
+> max(Teste)
+> quantile(Teste,0.75) 
+#mediana experiência
+> mean(Exp)
+#Gráfico de Folhas de Vendas
+> stem(vendas,scale=2)
+#grafico de pontos
+> dotchart(vendas,main="Vendas por Vendedor")
+> plot(vendas)
+> hist(vendas,density=30,col=c("blue"))
+#acima temos o histograma de vendas
+#criação de uma tabela que liga as vendas por zona
+> tabela=table(vendas,zona)
+> tabela
+#tabela que liga vendas por zonas frequencia
+> prop.table(tabela)
+>tabelazona=prop.table(tabela,2)
+> barplot(tabelazona,main="Distribuição da zona segundo Vendas",xlab="Zona",ylab="frequencia relativa de Vendas",legend=T)
+#acima temos o grafico em caixa de zonas por vendas
+#grafico de dispersão de Teste e vendas
+> scatter.smooth(x=Teste,y=vendas,col="red")
+#coeficiente de correlação, Teste e vendas depois Experiencia, vendas
+> cor(Teste,vendas)
+> cor(Exp,vendas)
+

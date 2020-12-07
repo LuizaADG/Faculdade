@@ -1,0 +1,88 @@
+Consultar ocupações por horários
+- Sumário: O Usuário consultará no aplicativo
+as ocupações das vagas em sua região indicando o
+período ou o horário que cada vaga deverá estar ocupada
+- Atores: Usuário
+- Pré-condições: Ter efetuado o cadastro
+- Fluxo:
+i) Terá uma tela em que o usuário digitará o horário que ele deseja verificar
+ii) De acordo com a localização do usuário o sistema irá mostrar todas as ocupações
+
+
+
+Detalhamento do histórico do uso do sistema
+- Sumário: Opção que o usuário terá para verificar o histórico
+de atividades realizadas por ele
+- Atores: Usuário
+- Pré-condições: Ter alguma atividade realizada pelo sistema
+- Fluxo:
+i) O Sistema fornecerá uma tela onde o usuário poderá verificar suas atividades
+ii) Terá filtros na qual o usuário extrairá informações mais precisas
+iii) Caso o usuário deseje, ele poderá marcar qualquer atividade que ele desejar
+para que ele não tenha que procurar novamente no histórico
+- Pós-condições: Não se aplica
+
+
+Caso de uso: Realizar pagamento do uso da vaga
+- Sumário: Após o uso da vaga o sistema de banco deverá
+realizar automaticamente o pagamento pelo o uso
+- Atores: Sistema de Banco
+- Pré-condições: Ter utilizado alguma vaga, Cartão de crédito cadastrado
+- Fluxo:
+i) Após o uso da vaga, o sistema mostrará uma tela
+em que apresenta ao usuário o valor calculado
+ii) O usuário terá a opção de aprovar valor cobrado
+iii) Após aprovação do usuário o valor será descontado pelo sistema de banco,
+- Pós-condições: Vaga liberada para ser novamente utilizada
+
+
+
+Caso de uso: Receber recomendação de vaga
+- Sumário: Se torna uma forma de conseguir utilizar
+uma vaga segura, onde pessoas recomendam para outras
+locais e vagas, o que faz aumentar a confiança da pessoa
+em utilizar esta vaga
+- Atores: Veículo
+- Pré-condições: Ter efetuado o cadastro do veículo e do usuário
+- Fluxo:
+i) O Sistema terá uma tela em que o usuário poderá ver as opções de
+recomendações de vaga
+ii) Junto a recomendação o sistema abrira uma sub-tela em que
+deverá mostrar informações detalhadas da vaga
+iii) E terá a opção de verificar se a vaga está disponível para uso
+no momento em que o usuário está utilizando o sistema
+- Pós-condições: Não se aplica
+
+
+Caso de uso: Registrar fim de uso da vaga
+- Sumário: Após o uso da vaga, ao terminar o limite para uso
+o sensor detecta e registra o fim do uso da vaga
+- Atores: Sensor,Smartphone
+- Pré-condições: Ter registrado o inicio do uso da vaga
+- Fluxo:
+i) O sistema verificará se o pagamento do motorista foi aprovado
+ii) O Sistema verificará se o lugar da vaga foi desocupado
+iii) O Sistema deverá lançar nas opções de vaga a vaga que foi
+desocupada
+- Pós-condições: A vaga estar livre para uso
+
+
+Caso de uso: Relatório perfis dos usuários
+- Sumário: O sistema do Detran terá um relatório
+com os perfis dos usuários contento todas as informações
+relacionadas aos próprios usuário e aos seus respectivos veículos
+- Atores: Sistema Detran
+- Pré-condições: Não se aplica
+- Fluxo:
+i) O Sistema deverá ter uma tela em que se encontra os perfis dos usuários
+ii) Dentro do perfil do usuário terá todas as informações e observações de todas
+as atividades realizadas por este usuário e pelo(s) veículo(s) cadastrados por ele
+iii) O Sistema terá filtro para os perfis dos usuários
+iv) Também terá filtro para se aplicar nas atividades de um determinado usuário e de
+um determinado veículo
+- Pós-condições: Não se aplica
+
+
+
+
+

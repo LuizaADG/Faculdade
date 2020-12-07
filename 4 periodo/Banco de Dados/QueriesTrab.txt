@@ -1,0 +1,12 @@
+Queries
+Autoras: Luiza Ávila e Stefany
+1) Selecione as sessões do filme Vingadores
+	select * from (Filme natural join Sessao) where tit='Vingadores';
+2) Selecione as salas da sessão 1
+	select nrosala from (Sala natural join Sessao) where codses=1;
+3) Selecione os filmes do gênero Terror e suas sessões
+	select tit as titulo, codses as sessao from (Genero natural join Filme) where descric='Terror';
+4) Selecione o maior valor encontrado para o filme Curtindo a Vida Adoidado
+	select vali from (Sessao natural join Filme) where tit like '%Curtindo%';
+5) Selecione os filmes que passarão em novembro de 2018
+	select tit from (Filme natural join Sessao) where sessao.data between '01112018' and '30112018';

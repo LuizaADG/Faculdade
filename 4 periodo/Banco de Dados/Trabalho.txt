@@ -1,0 +1,61 @@
+Create table Sessao
+(codses int not null,
+data date default sysdate,
+vali int not null,
+valm int not null,
+constraint PK_File primary key (codses));
+
+Insert into Sessao values(1,'28122018',20,10);
+Insert into Sessao values(2,'28112018',24,12);
+Insert into Sessao values(3,'29122018',22,11);
+Insert into Sessao values(4,'28112018',22,11);
+Insert into Sessao values(5,'28112018',18,09);
+Insert into Sessao values(6,'29102018',22,11);
+Insert into Sessao values(7,'28112018',22,11);
+Insert into Sessao values(8,'30122018',20,10);
+
+Create table Genero(
+descric char (30),
+codgen int not null,
+Constraint PK_Genero primary key (codgen));
+
+Insert into genero values('Comedia',1);
+Insert into genero values('Acao',2);
+Insert into genero values('Romance',3);
+Insert into genero values('Terror',4);
+
+Create table Filme
+(Id int not null,
+Tit char (100) not null,
+Dur char(30),
+codses int not null,
+codgen int,
+constraint PK_Filme primary key (Id),
+Constraint FK_Filme_Sessao foreign key(codses) references Sessao,
+Constraint FK_Filme_Genero foreign key(codgen) references Genero);
+
+Insert into filme values (1,'Matrix','02:30',3,2);
+Insert into filme values (2,'Vingadores','02:23',2,2);
+Insert into filme values (3,'De Volta Para o Futuro','01:56',1,1);
+Insert into filme values (4,'Princesa Prometida','01:38',4,3);
+Insert into filme values (5,'A Freira','01;36',4,4);
+Insert into filme values (6,'Como Treinar o Seu Dragão','01:38',5,1);
+Insert into filme values (7,'Frozen','01:49',5,1);
+Insert into filme values (8,'Velozes e Furiosos','01:47',6,2);
+Insert into filme values (9,'Meu Passado Me Condena','01:42',3,1);
+Insert into filme values (10,'Curtindo a Vida Adoidado','01:43',1,1);
+
+
+Create table Sala
+(nrosala int not null,
+capac int not null,
+codses int not null,
+Constraint Pk_Sala primary key (nrosala),
+Constraint FK_Sala_Sessao foreign key(codses) references Sessao);
+
+Insert into Sala values(1,100,1);
+Insert into Sala values(2,200,2);
+Insert into Sala values(3,100,1);
+Insert into Sala values(4,150,4);
+Insert into Sala values(5,250,7);
+Insert into Sala values(6,300,8);

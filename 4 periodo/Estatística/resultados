@@ -1,0 +1,249 @@
+
+R version 3.5.1 (2018-07-02) -- "Feather Spray"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R é um software livre e vem sem GARANTIA ALGUMA.
+Você pode redistribuí-lo sob certas circunstâncias.
+Digite 'license()' ou 'licence()' para detalhes de distribuição.
+
+R é um projeto colaborativo com muitos contribuidores.
+Digite 'contributors()' para obter mais informações e
+'citation()' para saber como citar o R ou pacotes do R em publicações.
+
+Digite 'demo()' para demonstrações, 'help()' para o sistema on-line de ajuda,
+ou 'help.start()' para abrir o sistema de ajuda em HTML no seu navegador.
+Digite 'q()' para sair do R.
+
+[Área de trabalho anterior carregada]
+
+> load("C:\\Users\\Lu\\Documents\\.RData")
+> sqrt(16)
+[1] 4
+> Teste<- scan()
+1: 6
+2: 4
+3: 3
+4: 5
+5: 7
+6: 8
+7: 6
+8: 7
+9: 3
+10: 8
+11: 8
+12: 9
+13: 7
+14: 5
+15: 5
+16: 
+Read 15 items
+> objects()
+[1] "conceito"   "dados"      "Exp"        "iris"       "tabela"     "tabelazona" "Teste"      "vendas"     "zona"      
+> Exp<- scan()
+1: 4
+2: 4
+3: 2
+4: 1
+5: 3
+6: 4
+7: 1
+8: 2
+9: 3
+10: 5
+11: 1
+12: 2
+13: 2
+14: 3
+15: 3
+16: 
+Read 15 items
+> conceito= scan(,what="")
+1: Bom
+2: Bom
+3: Bom
+4: Regular
+5: Regular
+6: Bom
+7: Regular
+8: Regular
+9: Regular
+10: Excelente
+11: Regular
+12: Excelente
+13: Regular
+14: Bom
+15: Bom
+16: 
+Read 15 items
+> vendas=scan()
+1: 30
+2: 24
+3: 16
+4: 21
+5: 24
+6: 30
+7: 24
+8: 48
+9: 21
+10: 54
+11: 32
+12: 50
+13: 23
+14: 27
+15: 29
+16: 
+Read 15 items
+> zona=scan(,what="")
+1: Sul
+2: Sul
+3: Norte
+4: Oeste
+5: Oeste
+6: Oeste
+7: Oeste
+8: Sul
+9: Sul
+10: Norte
+11: Oeste
+12: Sul
+13: Norte
+14: Norte
+15: Norte
+16: 
+Read 15 items
+> save.image("C:\\Users\\Lu\\Documents\\Faculdade\\Estatística\\Trabalho de Estatística")
+> dados=data.frame(Teste,Exp,conceito,vendas,zona)
+> dados
+   Teste Exp  conceito vendas  zona
+1      6   4       Bom     30   Sul
+2      4   4       Bom     24   Sul
+3      3   2       Bom     16 Norte
+4      5   1   Regular     21 Oeste
+5      7   3   Regular     24 Oeste
+6      8   4       Bom     30 Oeste
+7      6   1   Regular     24 Oeste
+8      7   2   Regular     48   Sul
+9      3   3   Regular     21   Sul
+10     8   5 Excelente     54 Norte
+11     8   1   Regular     32 Oeste
+12     9   2 Excelente     50   Sul
+13     7   2   Regular     23 Norte
+14     5   3       Bom     27 Norte
+15     5   3       Bom     29 Norte
+> #desvio padrao
+> sd (vendas)
+[1] 11.42804
+> #vendedor excepcional
+> mean(vendas)+ (2*sd(vendas))
+[1] 53.05607
+> #vender menos
+> quantile (vendas,type=2)
+  0%  25%  50%  75% 100% 
+  16   23   27   32   54 
+> summary(vendas)[2]
+1st Qu. 
+   23.5 
+> #Menor,maior, terceiro quartil
+> min(Teste)
+[1] 3
+> max(Teste)
+[1] 9
+> quantile(Teste,0.75)
+75% 
+7.5 
+> #mediana experiência
+> mean(Exp)
+[1] 2.666667
+> #Gráfico de Folhas de Vendas
+> stem(vendas,scale=2)
+
+  The decimal point is 1 digit(s) to the right of the |
+
+  1 | 6
+  2 | 113444
+  2 | 79
+  3 | 002
+  3 | 
+  4 | 
+  4 | 8
+  5 | 04
+
+> #grafico de pontos
+> dotchart(vendas,main="Vendas por Vendedor")
+> plot(vendas)
+> hist(vendas,density=30,col=c("blue"))
+> #acima temos o histograma de vendas
+> summary (zona)
+   Length     Class      Mode 
+       15 character character 
+> #não é possível fazer! Só caracteres
+> tabela=table(vendas,zona)
+> #criação de uma tabela que liga as vendas por zona
+> tabela
+      zona
+vendas Norte Oeste Sul
+    16     1     0   0
+    21     0     1   1
+    23     1     0   0
+    24     0     2   1
+    27     1     0   0
+    29     1     0   0
+    30     0     1   1
+    32     0     1   0
+    48     0     0   1
+    50     0     0   1
+    54     1     0   0
+> summary(tabela)
+Number of cases in table: 15 
+Number of factors: 2 
+Test for independence of all factors:
+        Chisq = 20, df = 20, p-value = 0.4579
+        Chi-squared approximation may be incorrect
+> #tabela que liga vendas por zonas frequencia
+> prop.table(tabela)
+      zona
+vendas      Norte      Oeste        Sul
+    16 0.06666667 0.00000000 0.00000000
+    21 0.00000000 0.06666667 0.06666667
+    23 0.06666667 0.00000000 0.00000000
+    24 0.00000000 0.13333333 0.06666667
+    27 0.06666667 0.00000000 0.00000000
+    29 0.06666667 0.00000000 0.00000000
+    30 0.00000000 0.06666667 0.06666667
+    32 0.00000000 0.06666667 0.00000000
+    48 0.00000000 0.00000000 0.06666667
+    50 0.00000000 0.00000000 0.06666667
+    54 0.06666667 0.00000000 0.00000000
+> tabelazona=prop.table(tabela,2)
+> tabelazona
+      zona
+vendas Norte Oeste Sul
+    16   0.2   0.0 0.0
+    21   0.0   0.2 0.2
+    23   0.2   0.0 0.0
+    24   0.0   0.4 0.2
+    27   0.2   0.0 0.0
+    29   0.2   0.0 0.0
+    30   0.0   0.2 0.2
+    32   0.0   0.2 0.0
+    48   0.0   0.0 0.2
+    50   0.0   0.0 0.2
+    54   0.2   0.0 0.0
+> plot(tabela)
+> barplot(tabela)
+> barplot(tabelazona,main="Distribuição da zona segundo Vendas",xlab="Zona",ylab="frequencia relativa de Vendas",legend=T)
+> #acima temos o grafico em caixa de zonas por vendas
+> scatter.smooth(x=Teste,y=vendas,col="red")
+
+> #grafico de dispersão de Teste e vendas
+> scatter.smooth(x=Teste,y=vendas,col="red")
+> #coeficiente de correlação, Teste e vendas depois Experiencia, vendas
+> cor(Teste,vendas)
+[1] 0.704746
+> cor(Exp,Vendas)
+Error in is.data.frame(y) : objeto 'Vendas' não encontrado
+> cor(Exp,vendas)
+[1] 0.2632924
+> save.image("C:\\Users\\Lu\\Documents\\Faculdade\\Estatística\\Trabalho de Estatística")
+> 

@@ -1,0 +1,100 @@
+Create table Pais
+(CodPais int not null,
+NomPais char(30) not null, 
+constraint PK_Pais primary Key (CodPais));
+
+desc Pais;
+
+Insert into Pais 
+values (1, 'Brasil');
+
+Insert into Pais 
+values (1, 'Portugal');//erro não pode criar outro com a mesma primary Key
+
+Insert into Pais 
+values (2, 'Portugal');
+
+commit;//"salva as atualizações"
+
+Select *
+from Pais;//mostra tabela
+
+Select NomPais
+from Pais
+Order by NomPais
+desc;
+
+commit;
+
+Insert into Pais
+values (3, 'Alemanha');
+
+Select *
+from Pais;
+
+rollback;//"volta" para antes da ultima atualização
+
+Select *
+from Pais;
+
+Insert into Pais
+values (3);//erro, sem país
+
+Insert into Pais
+values (3, 'Alemanha');
+
+Insert into Pais
+values (4, 'Chile');
+
+Select *
+from Pais
+Order by NomPais;
+
+commit;
+
+Create table Autor
+(CodAut int not null,
+NomAut char (35) not null,
+CodPais int not null,
+constraint PK_Autor primary Key(CodAut),
+constraint FK_Pais_Autor foreign Key (CodPais) references Pais);//ou delete, update restrict
+
+Insert into Autor
+values (1, 'Machado de Assis',1);
+
+Insert into Autor
+values (2, 'Jose Luis do Rego');//erro sem foreign key
+
+Insert into Autor
+values (2, 'Jose Luis do Rego',9);//erro foreign key não existe na tabela referenciada
+
+Insert into Autor
+values (2, 'Jose Luis do Rego',1);
+
+Insert into Autor
+values (3, 'Pablo Neruda',4);
+
+Select *
+from Autor;
+
+commit;
+
+Select NomPais, NomAut 
+from Autor join Pais
+on Autor.CodPais=Pais.CodPais
+Order by NomPais, NomAut;
+
+Select *
+from Pais join Autor
+on Pais.CodPais=Autor.CodPais;
+
+Select *
+from Pais natural join
+Autor;
+
+Delete from Pais 
+where CodPais=1;//erro não consegue deletar pai sem deletar antes os filhos
+
+Drop table Autor;
+
+Drop table Pais;

@@ -1,0 +1,53 @@
+Autoras: Luiza Ávila e Stefany
+
+Problema:
+
+Uma turma de amigos deseja fazer uma festa surpresa para um de
+seus amigos, sabendo que ele é apaixonado por filmes, tiveram 
+a brilhante ideia de fazer a festa no cinema do shopping que 
+ele costuma frequentar. Mas para concluir esta brilhante façanha, eles
+precisão saber dados importantes como: os filmes que passaram no mês
+do aniversário dele, se os filmes prediletos dele ainda estão em cartaz,
+se a capacidade do cinema irá suportar a quantidade de convidados e ainda
+o preço do filme.
+
+Queries:
+
+1) Selecione as sessões do filme Vingadores
+	select * from (	Filme natural join Sessao) where tit='Vingadores';
+
+2) Selecione as salas da sessão 1
+	select nrosala from (Sala natural join Sessao) where codses=1;
+
+3) Selecione os filmes do gênero Terror e suas sessões
+	select tit as titulo, codses as sessao from (Genero natural join Filme) where descric='Terror';
+
+4) Selecione o maior valor encontrado para o filme Curtindo a Vida Adoidado
+	select vali from (Sessao natural join Filme) where tit like '%Curtindo%';
+
+5) Selecione os filmes que passarão em novembro de 2018
+	select tit from (Filme natural join Sessao) where sessao.data between '01112018' and '30112018';
+
+6) O número das salas com capacidade superior a 150 pessoas
+	select nrosala from sala where capac > 150;
+
+7) A média de assentos do cinema
+	select AVG(capac) from sala;
+
+8) O nome do filme que será passado na sala que suporta mais pessoas
+	select tit from Filme 
+	natural join sessao 
+	natural join sala 
+	where capac > (select max(capac) from sessao);
+
+9) O filme mais caro
+	Select tit from Filme
+	Natural Join sessao 
+
+	Where vali = (select Max(vali) from sessao);
+
+10) A Sessao que tem a sala com maior capacidade
+	Select codses from sessao
+	Natural Join sala 
+
+	Where capac = (select Max(capac) from sala);
