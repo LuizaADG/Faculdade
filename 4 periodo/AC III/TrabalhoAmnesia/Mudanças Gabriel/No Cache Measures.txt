@@ -1,0 +1,44 @@
+ Main Memory
+     Read Access: 1219
+     Read Cycles: 1219
+     Read Time: 12190
+     Write Access: 980
+     Write Cycles: 1960
+     Write Time: 19600
+     Total Access: 2199
+     Total Time: 31790
+
+Disk
+     Read Access: 86
+     Read Cycles: 86
+     Read Time: 8600
+     Write Access: 86
+     Write Cycles: 172
+     Write Time: 17200
+     Total Time: 25800
+
+Page Table
+     Read Access: 291
+     Read Cycles: 291
+     Read Time: 2910
+     Write Access: 172
+     Write Cycles: 344
+     Write Time: 3440
+     Total Access: 291
+     Page Fault: 86
+     Total Time: 6350
+
+TLB
+     Read Access: 360
+     Read Cycles: 360
+     Read Time: 360
+     Write Access: 291
+     Write Cycles: 582
+     Write Time: 582
+     Total Access: 360
+     Total Hit: 69
+     Total Miss: 291
+     Hit rate: 0.19166666
+     Total Time: 942
+
+ Total Time: 58532
