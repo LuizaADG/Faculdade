@@ -1,0 +1,16 @@
+Gabriel Souza e Luiza Ávila
+	O objetivo do aplicativo "uatu" é ser capaz de ajudar a identificação de incidentes, sejam eles criminais ou não, informando O OAP (Orgão de Administração Pública).
+	A ideia é o usuário tirar uma foto do evento que está ocorrendo, depois, se quiser realizar uma pequena narração do evento, classificar a urgência da situação e por meio da geolocalização, notificar onde ocorreu ao órgão público necessário. Como recompensa, o usuário recebe dinheiro por meio do app.
+1 - Tela para cadastro e tela para login do usuário
+	O sistema  deve manter um cadastro dos usuário por questões de autenticação, evitando trotes pelo aplicativo, e permitindo o pagamento pelo feito.
+	O cadastro deve ser baseado no nome da pessoa, senha e conta da agência.
+2 - Tela inicial é a câmera
+	O aplicativo deve abrir como tela inicial a câmera para agilizar o processo de captura do momento. No caso, crimes devem ser retratados o mais rápido possível, então a câmera deve ser a mais acessível.
+	O aplicativo obrigatoriamente exige acesso ao GPS, pois a foto deve possuir geolocalização.
+3 - Tela com informações do post aparece após a foto 
+	Após a realização da foto, o aplicativo deve exibir a tela de informações do post pois o usuário pode informar por texto que está acontecendo, e classificar a situação para O OAP tomar as medidas necessárias, de acordo com a urgência de cada caso.
+	De qualquer forma a foto é salva imediatamente. Caso não haja conexão com a internet, o post pode ser feito em outra hora.
+	O post pode ser feito anonimamente para o público geral, mas os dados bancários e identificação ainda devem ser enviados à OAP para que seja medida confiabilidade e creditada a recompensa.
+	Caso a geolocalização tenha sido imprecisa, neste ponto é possível alterar a localização (o dado original ainda será enviado junto com o dado corrigido para fins de análise)
+4 - Tela de perfil (saldo, histórico,nome, foto, etc)
+	O usuário deve ser capaz de alterar suas informações e ver seu histórico de postagens, além do seu saldo pelo aplicativo.

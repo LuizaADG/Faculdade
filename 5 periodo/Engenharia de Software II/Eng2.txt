@@ -1,0 +1,40 @@
+Autenticar entrada
+Pré-Condições:
+- Cliente deve estar cadastrado na Amazon
+- Cliente deve possuir o aplicativo
+
+Fluxo:
+- Cliente entra no aplicativo
+- Cliente apresenta o QR code ao sistema pela catraca
+- Cliente, se aprovado pelo sistema, entra na loja 
+
+Pós-Condições: não há
+
+Colocar produto no carrinho
+Pré-Condições:
+- Ter sido aprovado pelo sistema e entrado na loja
+
+Fluxo:
+- Cliente seleciona o produto e o retira da prateleira
+- Sensor da prateleira detecta retirada do produto
+
+Pós-Condições: Senspor notifica para dar baixa no estoque
+
+Devolver produto
+Pré-Condição:
+- Cliente ter escolhido determinado produto e ter colocado no carrinho
+
+Fluxo:
+- Cliente devolve produto a prateleira
+- Sensor detecta produto retornado
+
+Pós-Condição: Sensor cancela notificação ao sistema
+
+Sair da loja 
+Pré-Condição: não há
+
+Fluxo:
+- Cliente se retira da loja com os produtos e smartphone
+- Sistema autentifica saída e fornece boleto de pagamento ao cliente
+
+Pós-Condições: não há 
