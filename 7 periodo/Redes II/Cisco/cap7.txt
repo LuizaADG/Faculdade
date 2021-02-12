@@ -1,0 +1,69 @@
+Capítulo 7
+Defesa de sistemas e dispositivos
+Sistema operacional é crítico, um administrador pode modificar a sua configuração e torná-lo mais seguro.
+Outro requisito crítico de codificação de sistemas operacionais é a aplicação de patches e atualizações de segurança.
+O MBSA (Analisador de segurança de parâmetro Microsoft) avalia as atualizações de segurança ausentes e problemas de configuração de segurança no Microsoft Windows.
+Estão disponíveis os seguintes tipos de programas antimalware:Proteção antivírus; Proteção contra adware; Proteção contra phishing; Proteção contra spyware; Fontes confiáveis/não confiáveis
+Um firewall de software é um programa que é executado em um computador para permitir ou negar tráfego entre o computador e outros computadores conectados.
+Um sistema de detecção de invasão do host (HIDS) é um software que é executado em um computador que monitora atividades suspeitas
+A VPN é uma rede privada que conecta usuários ou sites remotos por uma rede pública, como a Internet.
+WEP: padrão de segurança Wi-Fi; fornece autenticação e proteções por criptografia; obsoleto hoje; chaves de 64 e 128 bits
+WPA: resposta a fraqueza do WEP; chaves WPA são 256 bits; fornecia MIC(verificação de integridade de msg); protocolo TKIP(melhoria nas chaves de criptografia); depois o AES que melhorou
+ainda mais as chaves
+WPA2: uso obrigatório do AES; modo cifra do CCM como substituto do TKIP
+Access points são os dispositivos que se comunicam com os dispositivos sem fio e os conectam de volta à rede cabeada. Para evitar access points não autorizados, 
+o setor de computadores desenvolveu a autenticação mútua. Um processo ou tecnologia em que as duas entidades de um link de comunicação se autenticam. Cliente autentica o access point e
+vice versa
+Acesso de arquivo
+Princípio de Menos Privilégio - Os usuários devem ser limitados apenas aos recursos que precisam em um sistema computacional ou em uma rede
+Restringindo Permissões de Usuário - Se um administrador negar permissões a um indivíduo ou a um grupo para um compartilhamento de rede, essa negação substituirá 
+todas as outras configurações de permissões.
+O EFS (Sistema de Criptografia de Arquivos) é uma característica do Windows que pode criptografar dados.
+Um usuário também pode escolher criptografar um disco rígido inteiro no Windows, usando um recurso chamado BitLocker.
+O BitLocker To Go criptografa unidades removíveis.
+Um backup dos dados armazena uma cópia das informações de um computador na mídia de backup removível.
+O software de controle de conteúdo restringe o conteúdo que um usuário pode acessar usando um navegador da Web na Internet.
+A clonagem de disco copia o conteúdo do disco rígido do computador em um arquivo de imagem.
+Deep Freeze "congela" a partição do disco rígido. Quando um usuário reinicia o sistema, o sistema é revertido para sua configuração congelada.
+Proteger fisicamente o hardware: uso de bloqueios de cabos; trava de cifra que usa botões que o usuário aperta em determinada sequência p/abrir a porta
+Limite de Tempo de inatividade e Bloqueio de Tela - configurar um temporizador de inatividade que fará, automaticamente, o logoff do usuário e bloqueará a tela, 
+depois de um período especificado.
+Horário de Login -  O sistema bloqueia logons durante as horas que estão fora do horário de logon permitido.
+Rastreamento GPS - protege fisicamente
+A RFID (Identificação por radiofrequência) usa ondas de rádio para identificar e rastrear objetos.  A RFID pode ajudar a automatizar o rastreio de ativos ou o bloqueio/desbloqueio sem fio 
+ou, ainda, a configurar dispositivos eletrônicos. Usam pouca energia
+Codificação do servidor
+O Secure Shell (SSH) é um protocolo que fornece uma conexão de gerenciamento seguro (criptografado) a um dispositivo remoto. Substitui o Telnet em questões de gerenciamento. Usa porta TCP22
+O Telnet é um protocolo mais antigo que usa transmissão de texto não criptografado, não protegido, tanto para autenticação de logon (nome de usuário e senha) 
+quanto para dados transmitidos entre os dispositivos de comunicação.
+A SCP (Secure Copy, cópia segura), transfere, com segurança, arquivos de computador entre dois sistemas remotos. O SCP usa o SSH para a transferência de dados
+Um método simples aplicado por muitos administradores para proteger a rede contra acesso não autorizado consiste em desativar todas as portas não utilizadas em um switch.
+Na maioria das redes que usam computadores Windows, um administrador configura o Active Directory com domínios em um Windows Server. Computadores Windows são membros de um domínio. 
+O administrador configura uma política de segurança de domínio que se aplica a todos os computadores que participam do domínio.
+Ativar logs ----> SO (logs registram eventos que ocorrem por causa de ações operacionais) e aplicativos de segurança (log fornece dados de segurança do pc)
+Sistemas HVAC controlam o meio ambiente (temperatura, umidade, fluxo de ar e filtragem do ar) e devem ser planejados e operados juntamente com outros componentes do data center, 
+como hardware de computação, cabeamento, armazenamento de dados, proteção contra incêndio, sistemas de segurança física e energia.
+O monitoramento de hardware geralmente é encontrado em grandes parques de servidores (Server farm). Um parque de servidores (server farm) é uma instalação que abriga centenas ou milhares 
+de servidores para empresas. 
+Codificação de rede
+O NOC (Centro de operação de rede) é um ou mais locais que contêm as ferramentas que fornecem aos administradores um status detalhado da rede da empresa. 
+O NOC é a base da solução de problemas de rede, monitoramento de desempenho, distribuição e atualizações de software e gerenciamento de dispositivo.
+O SOC (Centro de operação de segurança) é um site dedicado que monitora, avalia e defende os sistemas de informação da empresa, como sites, aplicações, bancos de dados, 
+data centers, redes, servidores e sistemas de usuários. Um SOC é uma equipe de analistas de segurança que detecta, analisa, responde, relata e previne incidentes de segurança cibernética.
+Red Team: um grupo de indivíduos independentes que desafia os processos dentro de uma empresa, para avaliar a eficácia da empresa.
+Proteção dos dispositivos de rede:
+Switches - O switch permite o acesso a dispositivos com endereços MAC legítimos, enquanto nega outros endereços MAC. Para protegê-los é recomendado: melhoria da segurança física, 
+configuração avançada e a implementação de atualizações e patches adequados do sistema, conforme necessário. Outro controle eficaz é a implementação da segurança de porta.
+VLANs - fornecem uma forma de agrupar dispositivos em uma LAN e em switches individuais. As VLANs usam conexões lógicas em vez de físicas.  
+Portas individuais de um switch podem ser atribuídas a uma VLAN específica. 
+Firewalls - soluções de hardware ou software que aplicam políticas de segurança de rede.Um firewall filtra a entrada de pacotes não autorizados ou possivelmente perigosos na rede
+Roteadores - Os roteadores se comunicam para identificar o melhor caminho possível para entregar o tráfego em redes diferentes. 
+Várias contramedidas e controles podem proteger roteadores de rede, inclusive a melhoria da segurança física, definições de configurações avançadas, 
+uso de protocolos de roteamento seguros com autenticação e atualizações e patches adequados do sistema
+A melhor forma de proteger uma rede sem fio é usar autenticação e criptografia. O padrão sem fio original, 801.11, introduziu dois tipos de autenticação:
+Autenticação de sistema aberto – Qualquer dispositivo sem fio pode se conectar à rede sem fio.
+Autenticação de chave compartilhada – Fornece mecanismos para autenticar e criptografar dados entre um cliente sem fio e um AP ou um roteador sem fio. (aqui entram WEP, WAP, WAP2)
+VoIP - proteção: alterar senhas, criptografar pacotes, usar ssh
+Biometria - Um erro de tipo I rejeita uma pessoa que se registra e é um usuário autorizado.  Aceitação falsa é um erro de tipo II. 
+A CER é a taxa em que a taxa de rejeições falsas e a taxa de aceitações falsas são iguais. Usado pra calcular a precisão da biometria
+

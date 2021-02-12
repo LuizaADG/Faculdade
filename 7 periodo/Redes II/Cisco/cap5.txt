@@ -1,0 +1,50 @@
+Capítulo  5
+------Tipos de controle de integridade de dados-------
+.Hash:ferramenta que assegura a integridade de dados através da captura de dados binários (a mensagem) para produzir representação de tamanho fixo denominada valor de hash ou message digest
+   *O hash é uma função matemática unidirecional relativamente fácil de calcular, mas bastante difícil de reverter (não reversível).
+   *Os algoritmos hash transformam qualquer quantidade de dados em um hash digital ou impressão digital de tamanho fixo.
+   *Três situações em que uma função hash pode ser usada são:
+   -Quando o IPSec estiver sendo usado
+   -Quando a autenticação por roteamento estiver ativada
+   -Nas respostas de desafios dentro de protocolos, como PPP CHAP
+   -Em contratos assinados digitalmente e certificados PKI
+.Um ataque de dicionário usa um arquivo que contém palavras, frases e senhas comuns. O arquivo tem os hashes calculados.
+   *Um ataque de dicionário compara os hashes no arquivo com os hashes de senha. Se um hash for compatível, o invasor descobrirá um grupo de senhas potencialmente boas.
+.Um ataque de força bruta tenta todas as combinações possíveis de caracteres até determinado tamanho.
+.Um SALT, que é uma cadeia de caracteres aleatória, é uma entrada adicional à senha antes do hash. Isso cria um resultado de hash diferente para as duas senhas--> gerado por CSPRNG
+   *O salting impede que um invasor use um ataque de dicionário para tentar adivinhar senhas.
+   *O salt deve ser exclusivo para cada senha de usuário. Nunca reutilize um salt. O tamanho do salt deve corresponder ao tamanho da saída da função hash.Sempre execute o hash no servidor 
+   em um aplicativo da Web.
+   * Salting faz com que tabelas não tenham o efeito devido
+.Uma tabela de pesquisa armazena os hashes de senhas pré-calculados em um dicionário de senha, juntamente com a senha correspondente.
+.Tabela de pesquisa inversa permite que o criminoso virtual lance um ataque de dicionário ou um ataque de força bruta em vários hashes, sem a tabela de pesquisa pré-calculada.
+.Rainbow tables sacrificam a velocidade de quebra de senha para diminuir o tamanho das tabelas de pesquisa. 
+   *Uma tabela menor significa que a tabela pode armazenar as soluções para mais hashes na mesma quantidade de espaço.
+.O alongamento de chave executa a função hash muito lentamente.
+.HMACs usam uma chave secreta adicional como entrada à função hash.----> garante a integridade e a autenticação.
+---------Assinaturas digitais ---> NIST aprova: DSA,RSA,ECDSA
+.Uma assinatura digital é um método matemático usado para verificar a autenticidade e a integridade de uma mensagem, documento digital ou software.
+   *Uma assinatura digital assegura que o remetente assinou eletronicamente a mensagem ou documento.
+.Assinatura de código - Utilizada para verificar a integridade de arquivos executáveis baixados de um site do fornecedor.
+.Certificados digitais - Utilizados para verificar a identidade de uma empresa ou indivíduo para autenticar um site do fornecedor e estabelecer uma conexão
+ criptografada para troca de dados confidenciais 
+.Etapas para criar uma assinatura digital: 
+   *Criar uma message digest; 
+   *criptografar a digest com a chave privada do remetente e empacotar a mensagem, a digest criptografada e a chave pública juntos a fim de assinar o documento. 
+-----------Certificado ----------
+.Um certificado digital é equivalente a um passaporte eletrônico.
+   *O padrão para uma infraestrutura de chave pública gerenciar certificados digitais: padrão x.509 é para uma infraestrutura PKI e x.500 é para estruturas de diretório.
+.O cadeado na janela do navegador garante que uma conexão segura foi estabelecida e não foi bloqueada por um complemento do navegador. Assegura que o site está usando um certificado
+ digital para proteger a transação
+--------Aplicação da Integridade de dados---------
+.As quatro regras ou restrições de integridade de dados são as seguintes:
+-Integridade da entidade: Todas as linhas devem ter um identificador único denominado chave primária
+-Integridade de domínio: Todos os dados armazenados em uma coluna devem seguir o mesmo formato e definição
+-Integridade de referência: A relação entre as tabelas deve permanecer coerente. Portanto, um usuário não pode excluir um registro que está relacionado a outro 
+-Integridade definida pelo usuário: Um conjunto de regras definidas por um usuário que não pertence a uma das outras categorias.
+.Uma regra de validação ajuda a garantir a integridade, a precisão e a consistência dos dados. ---> Critérios de regra avaliação: formato, consistência, alcance e dígito de verificação. 
+.Muitos ataques conhecidos são executados contra um banco de dados e inserem dados desformatados. 
+   *O ataque pode confundir, falhar ou fazer com que o aplicativo divulgue informações demais para o invasor.
+.A detecção de anomalias se refere à identificação de padrões em dados que não seguem o comportamento esperado.
+.A integridade referencial mantém a integridade das chaves externas.
+.A integridade de domínio garante que todos os itens de dados em uma coluna estejam dentro de um conjunto definido de valores válidos.

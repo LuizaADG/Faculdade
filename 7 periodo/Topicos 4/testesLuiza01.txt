@@ -1,0 +1,18 @@
+Cost after iteration 2400: 2.249340
+Learning rate = 2.5
+CPU times: user 3h 4min 30s, sys: 5min 19s, total: 3h 9min 49s
+Wall time: 1h 2min 18s
+
+Matriz de confusão:
+Predição    2
+Atual        
+1         155
+2         149
+3         146
+4         150
+
+Acurácia:
+0.24833333333333332
+
+Especificidade:
+-3.697916666666667

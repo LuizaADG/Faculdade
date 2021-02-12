@@ -1,0 +1,59 @@
+Capítulo 8
+Domínios de segurança cibernética
+Domínio de usuário - nclui usuários que acessam o sistema de informações da empresa; Os usuários são frequentemente o elo mais fraco nos sistemas de segurança de informações;
+A maioria dos problemas e soluções de usuários envolvem conscientização e monitoramento
+Domínio do dispositivo - Um dispositivo é qualquer computador, notebook, tablet ou smartphone que se conecta à rede;
+Exemplos de ameaça: malware, downloads, mídia não autorizada. Filtros de conteúdo, varreduras, bloqueios são exemplos de gerência das ameaças
+Domínio de rede de área local (LAN) - conjunto de dispositivos interconectados usando cabos ou ondas eletromagnéticas; requer fortes controles de acesso e segurança, 
+pois os usuários podem acessar os sistemas, aplicativos e dados da empresa no domínio da LAN
+Exemplos de ameaça: firewall mal configurado, acesso não autorizado, redes não autorizadas. Exigir senhas as redes sem fio, definir políticas, implementar criptografia entre
+dispositivos, são exemplos de gerência
+Domínio de nuvem privada (WAN) - inclui os servidores privados, os recursos e a infraestrutura disponíveis para os membros de uma empresa via Internet.
+Exemplos de ameaça: acesso não autorizado, erro de config. do roteador, redes não autorizadas. Desativar ping, monitorar tráfego IP de entrada, implementar padrão de dados, 
+são exemplos de gerência
+Domínio da nuvem pública - inclui serviços hospedados por um provedor de nuvem, provedor de serviço ou provedor de Internet. 3 modelos de proteção de nuvem: SaaS, PaaS, IaaS
+(Software;Plataforma e Infraestrutura como serviço, respectivamente)
+Exemplos de ameaça: violação de dados, credenciais comprometidas, engenharia social. Criptografia, backups, senhas únicas, autenticação multifatorial são exemplos de gerência
+Domínio de instalações físicas - s inclui todos os serviços usados por uma empresa, incluindo HVAC, água e detecção de incêndio. 
+Exemplos de ameças: roubo, interrupções de energia, ameaças naturais. Câmeras, teste de segurança, plano de recuperação de desastre, são exemplos de gerência
+Domínio de aplicação -  inclui todos os sistemas, aplicativos e dados essenciais. Além disso, inclui o hardware e qualquer design lógico necessário.
+Exemplos de ameaças: perda de dados, período de inatividade, acesso não autorizado. Realização de testes, implementação de registros, plano de recuperação de desastres
+são exemplos de gerência
+Ética e leis
+Ética utilitarista - O princípio orientador é que todas as ações que proporcionam a maior quantidade de bem sobre o mal são escolhas éticas.
+A abordagem dos direitos - Essa perspectiva analisa como uma ação afeta os direitos dos outros para julgar se uma ação é certa ou errada.
+A abordagem do bem comum - propõe que o bem comum é tudo o que beneficia a comunidade.
+O Computer Ethics Institute (CEI) é um recurso para identificar, avaliar e responder aos problemas éticos em todo o setor de tecnologia da informação. 
+Há crime assistido por computador, crime direcionado ao computador e crime incidental de computador. 
+Federal Information Security Management Act (FISMA) USA - aplica-se a sistemas de TI de agências federais e estipula que as agências criem um programa de segurança da informação
+Gramm-Leach-Bliley Act (GLBA) - uma legislação que afeta, principalmente, o setor financeiro.
+Sarbanes-Oxley Act (SOX) -  reformular os padrões de contabilidade financeira e empresarial e foi direcionada especificamente aos padrões das empresas de capital 
+aberto nos Estados Unidos.
+Padrão de Segurança de Dados do Setor de Cartões de Pagamento (PCI DSS) - conjunto de regras contratuais que regem como proteger dados de cartão de crédito, 
+à medida que comerciantes e bancos fazem a transação. Em teoria, é voluntário.
+Existe também a regulamentação da importação e exportação da criptografia
+Lei da Privacidade de Comunicações Eletrônicas (ECPA) - borda uma variedade de problemas jurídicos de relacionados à privacidade que resultaram do uso cada vez maior de 
+computadores e de outras tecnologias específicas de telecomunicações.
+Computer Fraud and Abuse Act (CFAA) - fundamento para leis dos EUA que criminalizam o acesso não autorizado a sistemas de computador.
+A Convenção sobre o crime digital é o primeiro tratado internacional sobre crimes na Internet.
+Electronic Privacy Information Center (EPIC) - promove políticas de privacidade e leis e políticas abertas do governo globalmente e se concentra nas relações UE-EUA.
+O banco de dados nacional de vulnerabilidades (NVD) é um repositório padronizado de dados do governo dos EUA para controle de vulnerabilidades que usa o protocolo de 
+automação de conteúdo de segurança (SCAP). Usado para avaliar o impacto de vulnerabilidades e pode auxiliar uma empresa a classificar a gravidade de vulnerabilidades encontradas em uma rede.
+O SCAP é um método para usar padrões específicos para automatizar o controle de vulnerabilidades, a medição e a avaliação de conformidade com a política.
+A divisão CERT de estudos SEI estuda e resolve problemas na área de segurança cibernética
+O Internet Storm Center (ISC) fornece uma análise e um serviço de aviso gratuitos para as empresas e usuários da Internet. 
+Ele também funciona com provedores de serviços de Internet para combater criminosos digitais.
+Advanced Cyber Security Center (ACSC) - compartilha informações sobre ameaças digitais, 
+faz pesquisa e desenvolvimento sobre segurança cibernética e cria programas de educação para promover a profissão de segurança cibernética. Reúne indústria, academia 
+e governo para abordar ameaças cibernéticas avançadas.
+Family Education Records and Privacy Act (FERPA) proíbe a divulgação inadequada de registros de formação pessoal.
+Armas de segurança cibernética
+Um scanner de vulnerabilidades avalia computadores, sistemas de computador, redes ou aplicações, em busca de pontos fracos.
+O teste de penetração (pen testing) é um método de testar áreas de fraquezas em sistemas usando várias técnicas maliciosas. Conhecidos como ataque ético de hacker (possuem autorização da
+empresa). Envolve um especialista em segurança cibernética que entra em um site, rede ou servidor com permissão da empresa para tentar obter acesso a recursos com o conhecimento de 
+nomes de usuários, senhas ou outros meios normais.
+Os packet analyzers (ou analisadores de pacotes) interceptam e registram o tráfego de rede. 
+O packet analyzer captura cada pacote, mostra os valores de vários campos no pacote e analisa o conteúdo. (Wireshark)
+Kali é uma distribuição de segurança Linux de código aberto. 
+
+

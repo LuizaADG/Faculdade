@@ -1,0 +1,71 @@
+Capítulo 6
+-----Cinco Noves----- 
+.Os cinco noves significam que sistemas e serviços estão disponíveis 99,999% do tempo. 
+.Alta disponibilidade se refere a um sistema ou componente que fica em operação continuamente, por um determinado período de tempo.
+   *Para ajudar a garantir a alta disponibilidade, é importante: eliminar pontos únicos de falha; Design para confiabilidade; Detectar falhas, à medida que elas ocorrem
+.A alta disponibilidade incorpora três grandes princípios para atingir a meta de acesso ininterrupto aos dados e serviços:
+-Eliminação ou redução de pontos únicos de falha
+-Resiliência do sistema
+-Tolerância a falhas
+------Gerenciamento de ativos------
+.O CVE contém um número de identificadores padrão com uma breve descrição e referências para avisos e relatórios de vulnerabilidade relacionados.
+.A identificação de ameaças começa com o processo de criação de um identificador CVE para vulnerabilidades publicamente conhecidas de segurança cibernética.
+.Análise de risco é o processo de analisar os perigos representados por eventos naturais e provocados por humanos aos ativos de uma empresa.
+.Existem duas abordagens para a análise de risco.
+-Análise de risco quantitativa - ALE = SLE * ARO
+-Análise de risco qualitativa - usa opiniões e cenários.
+.A mitigação envolve reduzir a gravidade da perda ou a probabilidade de que a perda ocorra.
+.Existem quatro maneiras comuns de reduzir o risco: 
+-Aceitar o risco e reavaliar periodicamente; 
+-Reduzir o risco com a implementação de controles; 
+-Evitar o risco alterando totalmente a abordagem;
+-Transferir o risco para terceiros
+--------Defesa em profundidade--------
+.Sobreposição- defesa em profundidade; diferentes camadas de proteção
+.Limitação - restringir acesso; acesso só ao necessário; medidas procedimentais
+.Diversidade - camadas com técnicas diferentes
+.Ofuscação - ocultar certos tipos de informações
+.Simplicidade - complexidade pode ser difícil de solucionar; simples no ponto de vista da empresa
+---------Redundância--------
+.Um ponto único de falha é uma operação crítica dentro da empresa. Únicos pontos de falha são links fracos na cadeia que podem provocar interrupção das operações da empresa.
+.A redundância N+1 garante a disponibilidade do sistema, no caso de falha de um componente. Os componentes (N) precisam ter, no mínimo, um componente de backup (+1).
+.Uma RAID combina vários discos rígidos físicos em uma única unidade lógica para proporcionar redundância de dados e melhorar o desempenho. 
+   *O RAID obtém os dados normalmente armazenados em um único disco e os espalha entre várias unidades.
+   *Como a RAID armazena dados nos vários discos:
+   -Paridade - Detecta erros de dados.
+   -Distribuição - Grava dados em várias unidades.
+   -Espelhamento - Armazena dados duplicados em uma segunda unidade.
+.A função básica do STP é prevenir loops em uma rede, quando os switches se interconectarem por vários caminhos. O STP garante que os links físicos redundantes estejam sem loop. 
+   *Ele garante que haja somente um caminho lógico entre todos os destinos na rede. O STP bloqueia intencionalmente os caminhos redundantes que poderiam provocar um loop.
+.Se houver somente um roteador como gateway padrão, é um ponto único de falha. A empresa pode escolher instalar um roteador de standby adicional.
+.O HSRP proporciona alta disponibilidade da rede, proporcionando redundância de roteamento de primeiro salto.
+.Em uma configuração de VRRP, o roteador eleito é o roteador virtual mestre, e os outros roteadores atuam como backup, se o roteador virtual mestre falhar.
+.O GLPB protege o tráfego de dados de um roteador ou circuito com falha, como HSRP e VRRP, permitindo, também, balanceamento de carga entre um grupo de roteadores redundantes.
+.Redundância local: síncrono; replicação assíncrona; Point-in-time-Replication
+---------Resiliência do sistema--------
+.Resiliência de aplicativo é a capacidade do aplicativo reagir a problemas em um de seus componentes sem parar de funcionar.
+.Resiliência do IOS - cópia de trabalho segura do arquivo de imagem do IOS do roteador e uma cópia do arquivo de configuração de execução. 
+-------Resposta a incidente------
+.Resposta a incidente são procedimentos que uma empresa segue, depois da ocorrência de um evento fora dos limites de normalidade.---> Montam um CSIRT (time)
+.A detecção começa quando alguém descobre o incidente. A análise de incidente ajuda a identificar a origem, extensão, impacto e detalhes de uma violação de dados.
+ Depois de identificar a violação, a empresa precisa contê-la e erradicá-la. A fase de recuperação inclui as medidas que a empresa precisa tomar para resolver a violação 
+ e restaurar os sistemas envolvidos.
+.A finalidade do Network Admission Control (NAC) é permitir que usuários, autorizados em sistemas em conformidade, acessem a rede.
+.Os IDSs (Sistemas de detecção de invasão) monitoram passivamente o tráfego em uma rede.
+   *Um dispositivo ativado para IDS copia o stream de tráfego e analisa a cópia do tráfego, no lugar dos pacotes reais encaminhados. Uma solução melhor é usar um dispositivo que pode detectar 
+    e parar imediatamente um ataque. Um IPS (Sistema de prevenção de invasão) executa essa função.  Entretanto, um dispositivo IPS é implementado no modo InLine. 
+    Isso significa que todo o tráfego de entrada e de saída deve fluir através dele para ser processado.
+.NetFlow é uma tecnologia CISCO IOS que fornece estatísticas em pacotes que passam por meio de um switch multicamadas ou de um roteador da Cisco.
+.IPFIX é um formato padrão para exportar informações baseadas em roteador sobre os fluxos de tráfego de rede para dispositivos de coleta de dados.
+.O Threat Intelligence avançado pode ajudar as empresas a detectar ataques durante uma das etapas do ataque cibernético e, às vezes, antes, com as informações certas. 
+   *O Threat Intelligence avançado é um tipo de evento ou de perfil de dados que pode contribuir para o monitoramento da segurança e da resposta. 
+---------Desastres--------
+.Naturais ou provocados por seres humanos
+.DPR- Plano de recuperação de desastres. O DRP inclui as atividades que a empresa realiza para avaliar, recuperar, reparar e restaurar instalações ou ativos danificados.
+.Existem três tipos de controles de recuperação de desastres em TI:
+-Medidas preventivas incluem controles que evitam a ocorrência de um desastre. Essas medidas visam a identificar os riscos.
+-Medidas de detecção incluem controles que descobrem eventos indesejados. Essas medidas descobrem novas possíveis ameaças.
+-Medidas corretivas incluem controles que restauram o sistema depois de um desastre ou um evento.
+.Um plano de continuidade dos negócios é um plano mais amplo que um DRP, pois inclui levar sistemas essenciais para outro local, enquanto o reparo da instalação original está em andamento
+
+

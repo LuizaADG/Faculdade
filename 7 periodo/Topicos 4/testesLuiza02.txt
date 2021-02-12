@@ -1,0 +1,18 @@
+layers_dims = [16384, 8000, 3000, 1000, 700,200 ,50, 4] #  8-layer model
+Cost after iteration 2000: 2.243095
+Learning Rate = 0.0075
+CPU times: user 13h 20min 34s, sys: 15min 20s, total: 13h 35min 54s
+Wall time: 10h 20min 9s
+Matriz de confusão:
+Predição    1
+Atual        
+1         153
+2         153
+3         151
+4         143
+
+Acurácia:
+0.255
+
+Especificidade:
+-3.65625

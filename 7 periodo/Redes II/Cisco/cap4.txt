@@ -1,0 +1,59 @@
+Capítulo 4
+-------Criptografia-------
+.Criptologia: a ciência de criar e violar os códigos secretos.
+.Criptografia: o modo de armazenar e transmitir dados, de modo que somente o destinatário pretendido possa ler ou processá-los. 
+   *A criptografia converte a mensagem legível de texto claro em texto codificado, que é a mensagem ilegível disfarçada. A descriptografia reverte o processo.
+   *A criptografia também precisa de uma chave, que desempenha um papel crítico para criptografar e descriptografar uma mensagem.
+.Métodos de criptografia:
+-Transposição – as letras são reorganizadas 
+-Substituição – as letras são substituídas 
+-Cifra de uso único – o texto claro, combinado com uma chave secreta, cria um novo caractere que é combinado com o texto claro para gerar o texto codificado 
+.Há duas classes de algoritmos de criptografia:
+-Algoritmos simétricos: mesma chave compartilhada para criptografar e descriptografar dados
+-Algoritmos assimétricos: chaves diferentes para criptografar e descriptografar dados. 
+   *No caso, a chave de criptografia pode ser pública e qualquer um pode codificar uma mensagem para o destinatário, mas só ele pode lê-la
+   *Diffie-Hellman fornece um método de troca eletrônica para compartilhar uma chave secreta e é usado por vários protocolos seguros.
+   *Quatro protocolos usam algoritmos de chave assimétrica:
+   -Troca de Chaves via Internet (IKE – Internet Key Exchange).
+   -SSL
+   -Secure Shell (SSH)
+   -Pretty Good Privacy (PGP)
+.Cifras de blocos: transformam um bloco de tamanho fixo de texto claro em um bloco comum de texto codificado de 64 ou 128 bits.
+   *Normalmente, as cifras de blocos resultam em dados de saída maiores do que os dados de entrada, pois o texto codificado deve ser um múltiplo do tamanho do bloco.
+.Cifras de fluxo/stream: criptografam um byte de texto claro ou um bit de cada vez
+   *As cifras de fluxo podem ser muito mais rápidas do que as cifras de blocos e geralmente não aumentam o tamanho da mensagem, pois podem criptografar um número arbitrário de bits.
+.O gerenciamento de chave inclui a geração, troca, armazenamento, utilização e substituição das chaves usadas em um algoritmo de criptografia.
+.Os dois termos usados para descrever as chaves são os seguintes:
+-Tamanho da chave - É a medida em bits.
+-Espaço da chave - É o número de possibilidades que um tamanho de chave específico pode gerar.
+.A criptografia de curva elíptica (ECC) utiliza curvas elípticas como parte do algoritmo para troca de chaves e geração de assinatura digital. Usado pela NSA
+------Controles de acesso---------
+.Controles de acesso físico são barreiras reais implantadas para evitar o contato direto com os sistemas.
+.Controles de acesso lógico são as soluções de hardware e software usadas para gerenciar o acesso aos recursos e sistemas.
+.Os controles de acesso administrativo são as políticas e procedimentos definidos pelas empresas para implementar e aplicar todos os aspectos de controle de acesso não autorizado.
+.O controle de acesso obrigatório (MAC) restringe as ações que um indivíduo pode executar em um objeto.
+.O responsável por um objeto determina se permitirá o acesso a um objeto com controle de acesso discricionário (DAC).
+.O controle de acesso por função (RBAC) varia de acordo com a função do indivíduo.
+   *O controle de acesso por função usa as listas de controle de acesso (ACLs) para ajudar a determinar se o acesso deve ser concedido.
+.A implementação da auditabilidade consiste em tecnologias, políticas, procedimentos e educação. Os arquivos de log fornecem as informações de detalhes com base nos parâmetros escolhidos.
+.Controles preventivos: Meios para evitar que algo aconteça.
+.Controles dissuasivos: limitar ou mitigar uma ação ou comportamento, mas as dissuasões não os impedem
+.Controles de detecção: identificam diferentes tipos de atividade não autorizada. Os controles de detecção não impedem que algo aconteça; na verdade, são medidas tomadas após o fato.
+.Controles corretivos:  restauram o sistema ao estado de confidencialidade, integridade e disponibilidade. 
+.Controles de recuperação: restauram os recursos, funções e capacidades após uma violação de uma política de segurança.
+.Controles de compensação:  fornecem opções a outros controles para aumentar o reforço relacionado à sustentação de uma política de segurança.
+-------Ofuscação de dados--------
+.A tecnologia de mascaramento de dados protege dados, substituindo as informações confidenciais por uma versão pública.
+.O mascaramento de dados pode substituir os dados sensíveis em ambientes não relativos à produção, para proteger as informações principais.
+.A estenografia esconde dados (a mensagem) em outro arquivo, como um gráfico, áudio ou outro arquivo de texto.
+   *A abordagem usada para integrar dados em uma imagem de capa é o uso de Bits Menos Significativos (LSB).
+.A estenografia social oculta informações de visão simples, criando uma mensagem que pode ser lida de certa forma pela pessoa que receber a mensagem.
+.A esteganoanálise é a descoberta de que existem informações ocultas.
+.A ofuscação de dados é o uso e a prática de técnicas de estenografia e mascaramento de dados na profissão de segurança digital e inteligência cibernética.
+   * AKA tornar uma mensagem confusa para dificultar seu entendimento
+.O software de marca d'água insere uma mensagem secreta no programa como prova de propriedade e protege o software de modificação ou acesso não autorizado.
+	
+		 
+
+
+
