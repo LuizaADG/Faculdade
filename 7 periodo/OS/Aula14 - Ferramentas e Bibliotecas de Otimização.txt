@@ -1,0 +1,35 @@
+----------------------------------------
+Ferramentas e bibliotecas de Otimização
+----------------------------------------
+
+GLPK
+https://www.gnu.org/software/glpk/
+Exemplo: http://winglpk.sourceforge.net/examples/bigm/
+
+GSL - GNU Scientific Library
+https://www.gnu.org/software/gsl/
+
+Gurobi Optimization
+https://www.gurobi.com
+
+FICO® Xpress Optimization
+https://www.fico.com/en/products/fico-xpress-optimization#bcl_java
+
+lpsolve
+https://sourceforge.net/projects/lpsolve/
+
+OptaPlanner
+https://www.optaplanner.org/
+
+JOM (Java Optimization Modeler)
+http://www.net2plan.com/jom/
+
+Octave	
+https://www.gnu.org/software/octave/
+
+SciPy - Python
+https://docs.scipy.org/doc/scipy/reference/optimize.html
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html
+
+Lista de Softwares de Otimização
+https://en.wikipedia.org/wiki/List_of_optimization_software

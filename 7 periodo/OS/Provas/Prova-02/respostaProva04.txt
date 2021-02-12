@@ -1,0 +1,8 @@
+Respostas
+Exercício 02:
+x1 = 3.33333
+x2 = 0
+z = 13.3333
+Exercício 3:
+Exercício 03:
+Custo_Total = 23

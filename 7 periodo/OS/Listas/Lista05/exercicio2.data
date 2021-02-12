@@ -1,0 +1,12 @@
+data;
+
+#conteiners e itens
+set C;
+set I;
+
+#peso de cada item
+param peso {j in I};
+
+#capacidade de cada conteiner
+param cap {i in C};
+

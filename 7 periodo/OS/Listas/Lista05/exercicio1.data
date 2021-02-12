@@ -1,0 +1,16 @@
+data;
+set D := P1 P2 P3;
+set Q := J1 J2 J3 J4 J5 J6 J7 J8 J9 J10;
+
+
+param: b:= 
+ J1  6
+ J2  4
+ J3  5
+ J4  4
+ J5  3
+ J6  7
+ J7  8
+ J8  5
+ J9  3
+ J10 3;

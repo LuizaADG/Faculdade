@@ -1,0 +1,14 @@
+# Define o conjunto "ORIG" e "oferta"
+param: ORIG: oferta :=
+A 2
+B 1
+C 2 ;
+# define "DEST" e "demanda"
+param: DEST: demanda :=
+D 3
+E 2 ;
+param Custo:
+D E  :=
+A 8 3 
+B 7 2 
+C 5 5 ;

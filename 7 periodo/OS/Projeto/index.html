@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalho de OS</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="codigo.js"></script>
+</head>
+<body>
+    <header>Trabalho de OS - Atribuição com Algoritmo de Leilão</header>
+    <div class="wrapper">
+        <div class="conteudo">
+            <p>Quantidade de profissionais:  </p>
+            <div class="caixa">
+            <input type="number" id="policiais">
+            </div>
+            <p>Quantidade de tarefas: </p>
+            <div class="caixa">
+            <input type="number" id="regioes">
+            </div>
+            <button id="botaoTabela" onclick="criarTabela()">Criar Tabela</button>
+        </div>
+        <div>
+            <table id="tabela" style="display: none;"> 
+            </table>
+        </div>
+        <div class="botao">
+            <button id="maximizar" onclick="main()" style="display: none;">Maximizar</button>
+        </div>
+        <div class="pDiv" id="paragraphDiv">
+            <p id="entrada"></p>
+        </div>
+    </div>
+</body>
+<footer>
+    Luiza Ávila e Stefany Gaspar
+</footer>
+</html>

@@ -1,0 +1,7 @@
+set agente := Ag1 Ag2 Ag3;
+set objetos := A B C D;
+param beneficio:
+	 A  B C D :=
+Ag1  1  3 1 1
+Ag2  1  5 1 15
+Ag3  1  1 1 1;
