@@ -1,0 +1,8 @@
+aplicação do k-means
+4 clusters, distância de manhattan
+Cluster 1 -
+Cluster 2 -
+Cluster 3 -
+Cluster 4 -
+GDP 
+Clusters 3 e 4 muito misturados, enquanto clusters 1 e 2 estão mais bem separados
