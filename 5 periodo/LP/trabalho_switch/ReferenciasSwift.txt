@@ -1,0 +1,14 @@
+Referências
+https://www.education-ecosystem.com/guides/programming/swift/history
+https://www.cleverism.com/skills-and-tools/swift/
+https://www.quora.com/Which-programming-language-is-Swift-similar-to-and-how-do-they-compare-to-each-other
+https://www.javaworld.com/article/2456964/10-things-you-should-know-about-apples-swift.html
+https://www.devmedia.com.br/desenvolvimento-ios-conheca-a-linguagem-swift/31860
+https://www.altexsoft.com/blog/engineering/swift-vs-objective-c-out-with-the-old-in-with-the-new/
+https://www.netguru.com/blog/swift-vs-objective-c-ios-programming-languages-compared
+https://medium.com/@ritesh.patil732/similarities-and-differences-between-objective-c-and-swift-programming-ab15d215b136
+https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted
+https://medium.com/xcblog/mobile-developers-takeaways-from-stack-overflow-developer-survey-2019-c0d04f6eb902
+https://www.redbytes.in/importance-programming-language-swift-mobile-app-development/
+Figuras:
+https://www.altexsoft.com/blog/engineering/swift-vs-objective-c-out-with-the-old-in-with-the-new/
