@@ -1,0 +1,2 @@
+Tirei:0,7
+As variáveis "travels" e "final_travels", na função compute path, são variáveis compartilhadas que não foram "protegidas" por um mecanismo de exclusão mútua. Na função apply_discount, existem variáveis compartilhadas que também não foram tratadas.

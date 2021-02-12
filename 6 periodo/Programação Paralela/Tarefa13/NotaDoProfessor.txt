@@ -1,0 +1,2 @@
+Tirei:0,85
+Isso é do próprio paralelismo. Você não garante ordem de execução. Pq se você quiser ordem, aí é deixar o programa sequencial novamente.

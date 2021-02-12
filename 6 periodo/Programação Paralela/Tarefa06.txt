@@ -1,0 +1,47 @@
+Gabriel Gomes da Cunha
+
+Iann Pedroza
+
+Luiza Ávila
+
+ 
+
+Processamento cerebro humano = 10^28 FLOPS
+Gasto cerebro humano = 20 WATTS
+
+Processamento SUMMIT = 2*10^17 FLOPS
+Gasto SUMMIT = 13*10^9 WATTS
+
+O supercomputador SUMMIT criado pela IBM em 2018 é atualmente o supercomputador mais rápido do mundo, sendo assim, ele será utilizado nos cálculos e deduções deste trabalho.
+
+Número de pesquisadores no mundo (estimativa):
+
+2019 : 10 milhões
+
+2021 : 10.8 milhões
+
+2024 : 11.6 milhões
+
+
+Processamento total dos pesquisadores (2019) = 10^7 * 10^28 = 10^35 FLOPS
+
+Nesse caso, teriamos que ter um supercomputador 5*10^17 vezes mais rápido que o SUMMIT. Portanto estamos um pouco longe de alcançarmos um processamento suficiente em um unico supercomputador para substituir todas as mentes pesquisadoras do mundo em 2019, e como o número de pesquisadores cresce ao longo do tempo, substituí-los completamente necessitará criar um supercomputador ainda mais rápido de tempos em tempos.
+
+Se levarmos em conta os gastos, o SUMMIT consome exorbitantemente mais que um ser humano, cerca de 6.5*10^8 vezes mais, o que deixa o supercomputador mais custoso, o que limita o desenvolvimento de um supercomputador 5*10^17 vezes mais rapido que o SUMMIT. Se fizermos a proporção, um supercomputador consome 6.5*10^-8 watts/flops, então, o nosso supercomputador estimado para superar todos os pesquisadores em 2019 gastará 6.5*10^27 watts.
+
+
+Referencias:
+
+https://www.quora.com/Roughly-what-processing-power-does-the-human-brain-equate-to-In-terms-of-petaflops-or-gigahertz-not-words-it-can-process
+
+https://www.worldometers.info/
+
+https://www.techtudo.com.br/noticias/2018/06/ibm-cria-summit-supercomputador-mais-rapido-do-mundo-de-200-petaflops.ghtml
+
+https://en.wikipedia.org/wiki/Summit_(supercomputer)
+
+http://resources.nvidia.com/c/worlds-fastest-supercomputer-infographic
+
+https://www.quora.com/How-many-researchers-are-there-in-the-world
+
+https://www.scientificamerican.com/article/computers-vs-brains/

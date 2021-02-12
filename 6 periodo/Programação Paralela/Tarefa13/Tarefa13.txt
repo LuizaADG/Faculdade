@@ -1,0 +1,1 @@
+No material, quando se utiliza omp sections para printar "i" e "j" é dito que não é possível determinar a ordem que os i's e j's serão executados. Minha pergunta é: por que isso acontece? Tem alguma diretiva para isso ser determinado? Existe um programa específico em que isso consegue ser determinado?
