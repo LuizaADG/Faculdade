@@ -1,7 +1,0 @@
-/*Testes 4*/
-VAR integer b, c, d;
-integer aa = 1;
-integer ab = 1, ac = 2, ad = 3;
-char c= 0xDDDDDD;
-char q=aab;
-char d[-3];
