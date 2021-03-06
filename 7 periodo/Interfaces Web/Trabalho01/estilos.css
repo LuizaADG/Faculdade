@@ -1,0 +1,279 @@
+
+.header{
+    background-color: rgb(48, 48, 48);
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+}
+
+.header_area{
+    padding: 5px;
+}
+#menuToggle {
+    display: none;
+  }
+.menu-icon {
+    display: none;
+}
+.menu1{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -320px;
+}
+.menu3{
+    position: absolute;
+    top: 40px;
+    left: 45%;
+    margin-left: -320px;
+}
+/*Ajuste de áreas de cards com divs*/
+.teste{
+    position: relative;
+}
+.teste2{
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+}
+.teste3{
+    position: absolute;
+    top:0%;
+    right:5%;
+}
+.menu3 a{ color: white;}
+
+.card-img{
+    width:100%;
+    height: auto;
+}
+.memu_area nav a:hover{
+    background-color: #94a3a5;
+}
+/*Bolinhas*/
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  /*Carrossel*/
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+.video{
+    width: 50%;
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+.descricao{
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+.carousel .item{
+    height: 600px;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+/*estrelas*/
+.checked {
+    color: orange;
+  }
+
+/*Logos*/
+.logo{
+    width: 100px;
+}
+
+#logo2{
+    width: 100px;
+}
+.cor{
+    background-color: #7e6a6e6c
+}
+
+.main .card{
+    margin-bottom: 15px;
+    
+}
+.card_area > div{ margin-bottom: 10px; }
+
+.card_area img { 
+    width:100%;
+    float: left;
+}
+.card-img{width: 100%;}
+/*Ajuste de divs*/
+.ajuste{
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+.ajuste2{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.ajuste3{
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+.main_area{
+    margin-bottom: 20px;
+}
+#test{
+    height: 381px;
+    width: 1110px;
+}
+.area{
+    width: 100%;
+}
+/*Selecionar categoria*/
+.selectWrapper{
+    border-radius:4px;
+    display:inline-block;
+    overflow:hidden;
+    background:#cccccc;
+    border:1px solid #cccccc;
+  }
+  .selectBox{
+    width:200px;
+    height:40px;
+    border:0px;
+    outline:none;
+    border-radius: 0
+  }
+  /*Footers*/
+.footer{
+    margin-top: 10px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+.footer_area{
+    padding: 20px;
+    text-align: left  ;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:600px){
+    .header{
+        background-position: 0px -50px;
+    } 
+    .cards{
+        width: 315px;
+    }
+    .ultimo{
+        width: fit-content;
+    }
+    .card_area {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:980px){
+    .header{
+        background-position: 0px -100px;
+    } 
+    .card_area {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    .header{        
+        position: fixed;
+        top: 0px;        
+        z-index: 999;
+        max-width:100% !important;
+    }
+    .container_nav {
+        width: 100%;
+        height: 100%;
+    }
+    .main{
+        margin-top: 140px;
+    }
+
+    .menu3 {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        left: 320px;
+        width: 100%;
+        height: 0%;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+    }
+
+    .menu3 a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .menu-icon {
+        width: 50px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 30px;
+        line-height: 60px;
+        color: white;
+        z-index: 999;
+    }
+    #menuToggle:checked ~ label i:nth-child(2) {
+      display: block;
+    }
+    #menuToggle:checked ~ label i:first-child {
+      display: none;
+    }
+    #menuToggle:not(:checked) ~ label i:first-child {
+      display: block;
+    }
+    #menuToggle:not(:checked) ~ label i:nth-child(2) {
+      display: none;
+    }
+  
+    #menuToggle:checked ~ nav {
+        height: 100%;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .cards{
+        width: 600px;
+    }
+    .ajuste > .card-body{
+        width:auto;
+    }
+    .ajuste > .card-img{
+        width:auto;
+    }
+}

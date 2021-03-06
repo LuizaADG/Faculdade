@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <title>Portal de Filmes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+<body>
+
+
+  <header class="container header">
+
+    <div class="row">
+
+      <div class="header_area">
+        <img src="imgs/logo.jpg" class="logo">
+        <div class="row ajuste2">
+
+          <div class="container_nav">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+              <i class="fa fa-bars"></i>
+              <i class="fa fa-times-circle"></i>
+            </label>
+            <nav class="nav menu3">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#">Lançamentos</a>
+              <a class="nav-link" href="#">Em destaque</a>
+              <a class="nav-link" href="#">Avaliações</a>
+              <a class="nav-link" href="#">Entrevistas&MakingOf</a>
+              <a class="nav-link" href="#">Novidades</a>
+              <!-- Search form -->
+              <form  id= "navbar-form" class="form-inline my-2 my-lg-0" style="margin: 0 auto; ">
+                <div class="md-form my-0">
+                  <input class="form-control" type="text" id = "txtPesquisa" placeholder="Pesquisar Filmes">
+                </div>
+              </form>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main class="container main">
+    <div class="row" style="width: 100vh;">
+      <div id="resultado-busca">
+      </div>
+    </div>
+    <!--Duas colunas do carrosel e dos botões-->
+    <div class="row main_area">
+
+
+      <!----Lançamentos----->
+      <div class="container ajuste">
+        <div class="row">
+
+          <div class="col-lg-12 col-xs-12 cor container">
+            <h1>Lançamentos</h1>
+            <div class="col col-md-10 col-lg-12">
+              <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <blockquote class="blockquote">
+                      <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12">
+                          <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XOwBS2s_S_w"
+                              allow="accelerometer; autoplay; encrypted media; gyroscope; picture in picture"
+                              allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class=" col-lg-6 col-sm-12 col-md-12 col-xs-12 descricao">
+                          <h2>A Escolha Perfeita</h5>
+                            <p>Sinopse: Obrigada a ir para a faculdade contra a vontade, a rebelde Beca não se
+                              interessa
+                              em
+                              participar de atividades extracurriculares,
+                              até surgir a oportunidade de ingressar no grupo musical Barden Bella e competir no
+                              Campeonato
+                              Regional de Música.</p>
+                            <p>Diretor: Jason Moore | Roteiro: Kay Cannon | Estreia: 7 de dezembro de 2012</p>
+                            <p>Elenco: Anna Kendrick, Skylar Astin, Ben Platt</p>
+                            <p>Avaliações:</p>
+                            <!-- Add icon library -->
+                            <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                    <blockquote class="blockquote">
+                      <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vwvAfR7NKME"
+                              allow="accelerometer; autoplay; encrypted media; gyroscope; picture in picture"
+                              allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 descricao">
+                          <h2>Enola Holmes</h5>
+                            <p>Sinopse: Enola Holmes só tem 16 anos, mas vai fazer de tudo para encontrar a mãe
+                              desaparecida,
+                              inclusive despistar o irmão Sherlock e ajudar um jovem lorde fugitivo.</p>
+                            <p>Diretor: Harry Bradbeer | Roteiro: Jack Thorne, Nancy Springer | Estreia: 23 de
+                              setembro de
+                              2020</p>
+                            <p>Elenco: Millie Bobby Brown, Henry Cavill, Sam Claflin</p>
+                            <p>Avaliações:</p>
+                            <!-- Add icon library -->
+                            <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                    <blockquote class="blockquote">
+                      <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WAqWObWIvHw"
+                              allow="accelerometer; autoplay; encrypted media; gyroscope; picture in picture"
+                              frameborder="0" allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 descricao">
+                          <h2>O Diabo de cada Dia</h5>
+                            <p>Sinopse: Em um lugar tomado por corrupção e violência, um jovem enfrenta figuras
+                              sinistras
+                              para
+                              proteger quem mais ama.</p>
+                            <p>Diretor: Antonio Campos | Roteiro: Antonio Campos | Estreia: 11 de setembro de 2020</p>
+                            <p>Elenco: Tom Holland,Bill Skarsgård,Riley Keough</p>
+                            <p>Avaliações:</p>
+                            <!-- Add icon library -->
+                            <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                    <blockquote class="blockquote">
+                      <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eDvDy9aiCak"
+                              allow="accelerometer; autoplay; encrypted media; gyroscope; picture in picture"
+                              frameborder="0" allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 descricao">
+                          <h2>Gatinhas e Gatões</h5>
+                            <p>Sinopse: O aniversário de 16 anos de Sam deve ser perfeito,
+                              mas sua família está tão preocupada com o casamento da irmã mais velha que esquece seu
+                              grande
+                              dia.</p>
+                            <p>Diretor: John Hughes | Roteiro: John Hughes | Estreia: 4 de maio de 1984</p>
+                            <p>Elenco: Molly Ringwald,Justin Henry,Anthony Michael Hall</p>
+                            <p>Avaliações:</p>
+                            <!-- Add icon library -->
+                            <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                    <blockquote class="blockquote">
+                      <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xXAdp_KJ-0A"
+                              allow="accelerometer; autoplay; encrypted media; gyroscope; picture in picture"
+                              frameborder="0" allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 descricao">
+                          <h2>Homem de Ferro</h5>
+                            <p>Sinopse: No filme, Tony Stark, um industrialista e mestre em engenharia,
+                              constrói uma armadura superpoderosa e se torna um super-herói tecnologicamente avançado,
+                              o
+                              Homem
+                              de Ferro.</p>
+                            <p>Diretor: Jon Favreau | Roteiro: Mark Fergus & Hawk Ostby e Art Marcum e Matt Holloway |
+                              Estreia: 30 de abril de 2008 </p>
+                            <p>Elenco: Robert Downey Jr., Terrence Howard, Shaun Toub</p>
+                            <p>Avaliações:</p>
+                            <!-- Add icon library -->
+                            <link rel="stylesheet"
+                              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!----Destaques----->
+    <div class="row teste ajuste" >
+      <h1>Destaques</h1>
+
+      <div class="selectWrapper teste3">
+        <select class="selectBox">
+          <option>Todos</option>
+          <option>Romance</option>
+          <option>Comédia</option>
+          <option>Ação</option>
+        </select>
+      </div>
+      <div id="aqui">
+        <section class="row card_area">
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+            <img class="img-responsive" src="imgs/poster01.jpg">
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+            <img class="img-responsive" src="imgs/poster02.jpg">
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+            <img class="img-responsive" src="imgs/poster03.jpg">
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+            <img class="img-responsive" src="imgs/poster04.jpg">
+          </div>
+
+        </section>
+      </div>
+      <div class="teste2" id ="carregar">
+        <a href="#" id="botao" class="float-right btn btn-secondary" onclick="return populares()" >+Carregar mais filmes</a>
+      </div>
+    </div>
+    <div>
+
+    </div>
+    <!----Ultimas avaliações----->
+    <div class="col-12 ajuste2 cor teste">
+      <div class="row ajuste2 ">
+        <h1>Últimas avaliações</h1>
+      </div>
+      <div class="ajuste3 row ">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 card mb-3" style="max-width: 300px;">
+          <div class="row no-gutters">
+            <div class="col-lg-4">
+              <img src="imgs/avaliador1.png" class="card-img cor">
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title">Eduarda Souza</h5>
+                <p class="card-text">A Escolha Perfeita: "A Escolha Perfeita" quase sempre atinge as notas certas, resultando em uma das comédias comerciais mais satisfatórias do ano</p>
+                <!-- Add icon library -->
+                <div class="row">
+                  <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <p>02/09/2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 card mb-3" style="max-width: 300px;">
+          <div class="row no-gutters">
+            <div class="col-lg-4">
+              <img src="imgs/avaliador2.png" class="card-img" alt="...">
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title">Gustavo Kent</h5>
+                <p class="card-text">O Diabo de Cada Dia: Achei o filme ótimo! Fiquei presa a ele até o final , me prendeu muito.</p>
+                <!-- Add icon library -->
+                <div class="row">
+                  <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <p>02/09/2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4 card mb-3" style="max-width: 300px;">
+          <div class="row no-gutters">
+            <div class="col-lg-4">
+              <img src="imgs/avaliador3.png" class="card-img img-responsive" alt="...">
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title">Tadeu Campos</h5>
+                <p class="card-text">Enola Holmes: Millie Bobby Brown é bastante carismática e a quebra da quarta parede evidencia mais ainda seu talento e dedicação aos papeis. É um filme divertido, com um bom figurino e fotografia, além de bons atores. Henry Cavill tem boa atuação, mas é fato que não combina com o personagem de Sherlock!!!</p>
+                <!-- Add icon library -->
+                <div class="row">
+                  <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <p>02/09/2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="teste2">
+        <a href="#" class="float-right btn btn-secondary">+Carregar mais avaliações</a>
+      </div>
+    </div>
+
+    <!----Entrevistas e makingof----->
+    <div class="col-12 ajuste2 teste">
+      <div class="row ajuste2">
+        <h1>Entrevistas e MakingOf</h1>
+      </div>
+      <div class="ajuste row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 card mb-3" style="max-width: 300px;">
+
+          
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PjYlCyxxHI"
+            allow="accelerometer; autoplay; encrypted media; gyroscope; picture in picture" frameborder="0"
+            allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Filme: Enola Holmes</h5>
+            <p class="card-text"><strong>Diretor:</strong> Harry Bradbeer </p>
+            <p class="card-text"><strong>Roteiro:</strong> Jack Thorne, Nancy Springer <strong>Estreia:</strong> 2020</p>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 card mb-3" style="max-width: 300px;">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lPxpJa0wPOY"
+            allow="accelerometer; autoplay; encrypted media; gyroscope; picture in picture" frameborder="0"
+            allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Nome do filme: Homem de Ferro</h5>
+            <p class="card-text"><strong>Diretor:</strong> Jon Favreau </p>
+            <p class="card-text"><strong>Roteiro:</strong> Mark Fergus & Hawk Ostby e Art Marcum e Matt Holloway <strong>Estreia:</strong> 2008</p>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 card mb-3" style="max-width: 300px;">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yZbSkpCgrR0"
+            allow="accelerometer; autoplay; encrypted media; gyroscope; picture in picture" frameborder="0"
+            allowfullscreen></iframe>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Nome do filme: O Diabo de Cada Dia</h5>
+            <p class="card-text"><strong>Diretor:</strong> Antonio Campos </p>
+            <p class="card-text"><strong>Roteiro:</strong> Antonio Campos <strong>Estreia:</strong> 2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="teste2">
+      <a href="#" class="float-right btn btn-secondary">+Carregar mais filmes</a>
+      </div>
+    </div>
+
+
+    <!--Area final-->
+    <div class="container-fluid  cor">
+      <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 cards">
+          <h1>Novidades</h1>
+          <div class=" card mb-3" style="max-width: 540px;" id="CARDS">
+            <div class="card-img-top d-flex align-items-center bg-light card_area">
+              <div class="col-xs-6">
+                <img src="imgs/poster01.jpg" class="card-img img-responsive" alt="...">
+              </div>
+              <div >
+                <div class="card-body col-xs-6">
+                  <h5 class="card-title">A Escolha Perfeita para um filme divertido</h5>
+                  <p class="card-text">O filme consegue fugir do lugar comum das cenas de canto/ dança longas, dando lugar a músicas mixadas e elementos que quebram a monotonia</p>
+                  <span class="badge badge-secondary">hollywood</span>
+                  <span class="badge badge-secondary">oscar</span>
+                  <span class="badge badge-secondary">melhor filme</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" card mb-3" style="max-width: 540px;">
+            <div class="card-img-top d-flex align-items-center bg-light card_area">
+              <div>
+                <img src="imgs/poster02.jpg" class="card-img img-responsive" alt="...">
+              </div>
+              <div>
+                <div class="card-body">
+                  <h5 class="card-title">Netflix: Desvendando ‘Enola Holmes’</h5>
+                  <p class="card-text">O contexto histórico ganha importância com o desenvolver da trama, trazendo uma mensagem feminista aparente ao mostrar os esforços do movimento sufragista na Inglaterra do século 19.</p>
+                  <span class="badge badge-secondary">oscar</span>
+                  <span class="badge badge-secondary">hollywood</span>
+                  <span class="badge badge-secondary">melhor filme</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" card mb-3" style="max-width: 540px;">
+            <div class="card-img-top d-flex align-items-center bg-light card_area">
+              <div>
+                <img src="imgs/poster03.jpg" class="card-img" alt="...">
+              </div>
+              <div>
+                <div class="card-body">
+                  <h5 class="card-title">Netflix: O acaso e a insanidade religiosa em ‘O Diabo de Cada Dia’</h5>
+                  <p class="card-text">Ainda que a narrativa seja extremamente envolvente, talvez o ponto alto de O Diabo de Cada Dia seja seu elenco – com nomes como Robert Pattinson, Tom Holland e Bill Skarsgard – que entrega tudo o que promete</p>
+                  <span class="badge badge-secondary">oscar</span>
+                  <span class="badge badge-secondary">hollywood</span>
+                  <span class="badge badge-secondary">melhor filme</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 ultimo">
+          <div class="col-xs-12 col-sm-12 area">
+            <h1>Sobre</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facilis, pariatur, rerum officia
+              illo, accusantium voluptate sed ipsam et mollitia esse ex quia commodi beatae odit impedit fugit aliquam
+              nostrum cupiditate. Veritatis voluptatibus, ipsa nulla qui quia quas cupiditate id perferendis accusamus
+              animi recusandae eos, itaque aspernatur quo sunt incidunt debitis! Veritatis mollitia facere placeat
+              sequi. Animi totam cumque debitis? Sit, quis! Corporis excepturi iste fugit accusamus laborum labore
+              cumque, vitae voluptate quam veritatis aspernatur itaque voluptas dignissimos, magnam cum mollitia
+              reiciendis architecto autem. Ab molestias aliquam iusto deserunt labore facilis? Ducimus suscipit dolorem
+              doloremque aperiam error modi nobis?</p>
+          </div>
+          <div class="col-xs-12 col-sm-12 area">
+            <h1>Editorial</h1>
+            <table>
+              <tr>
+                <td>
+                  <i class="fa fa-user fa-2x"></i>
+                </td>
+                <td> Redação:Mônica de Ávila</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa fa-user fa-2x"></i>
+                </td>
+                <td> Pesquisa:Stefany Gaspar</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa fa-user fa-2x"></i>
+                </td>
+                <td> Gerente geral:Luiza Ávila</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xs-12 col-sm-12 area">
+            <h1>redes sociais</h1>
+            <i class="fa fa-facebook-square fa-3x"></i>
+            <i class="fa fa-twitter fa-3x"></i>
+            <i class="fa fa-instagram fa-3x"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+  </main>
+
+  <footer class="container footer">
+
+    <div class="row">
+
+      <div class="col-12 footer_area">
+        Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - <strong> ICEI PUC Minas </strong>
+        <img src="imgs/logo.jpg" class="rounded float-right" id="logo2">
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+
+</html>
