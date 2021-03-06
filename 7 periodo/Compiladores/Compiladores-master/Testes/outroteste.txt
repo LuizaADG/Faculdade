@@ -1,0 +1,7 @@
+/**
+ Testes
+ ***/
+ Var integer a;
+ For n=1 to 10 do{
+	writeln("Ola '",nome);
+ } 	

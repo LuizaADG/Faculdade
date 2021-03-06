@@ -1,0 +1,25 @@
+PÚBLICO
+
+1. 7 caractere invalido.
+2. 7 caractere invalido.
+3. 3 lexema nao identificado [?].
+4. 13 linhas compiladas.
+5. 13 linhas compiladas.
+6. 14 fim de arquivo nao esperado.
+7. 13 linhas compiladas.
+8. 3 token nao esperado [;].
+9. 13 linhas compiladas.
+10. 13 linhas compiladas.
+
+PRIVADO
+
+1. 12 caractere invalido.
+2. 12 caractere invalido.
+3. 5 lexema nao identificado [0x].
+4. 14 linhas compiladas.
+5. 14 token nao esperado [}].
+6. 13 linhas compiladas.
+7. 9 fim de arquivo nao esperado.
+8. 3 token nao esperado [x].
+9. 3 token nao esperado [Var].
+10. 11 token nao esperado [+].
