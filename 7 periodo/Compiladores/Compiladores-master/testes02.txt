@@ -1,0 +1,6 @@
+/**
+ Testes 2 - @@us
+ ***/
+integer a;
+
+	

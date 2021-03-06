@@ -1,0 +1,29 @@
+/**
+ Testes 9
+ ***/
+VAR integer a;
+integer b, c, d;
+integer aa = 1;
+integer aaa = -1;
+integer ab = 1, ac = 2, ad = 3;
+char c= 0xDDDDDD;
+char q=aab;
+char d[50];
+/* const */
+const a_01 = 0;
+const a_02 = 0hFF;
+const a_03 = -1;
+const a_08 = 'luiza e stefany';
+     For n=1 to 10 do {
+    	writeln(“Ola' ",nome);
+   	 readln(a);
+	 readln(0xAAAA);
+	 readln(-4);
+	  ;
+         if m=1 then{
+	 	write(que, desgrama, 3);
+	}else{
+	 	writeln(8,string,a);
+	
+     }
+	
