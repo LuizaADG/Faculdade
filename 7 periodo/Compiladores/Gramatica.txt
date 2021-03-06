@@ -1,0 +1,26 @@
+S -> {A}{B}
+
+Declaração
+
+A -> var E | const id = D;
+E -> (integer|char) C;E
+C -> id([=D]|['['num']']) | id([=D]|['['num']']),C
+D -> [-]num | _char
+
+Comando
+B -> id = F; | For id=F to F [step num] do (B|'{'{B}'}') 
+| if F then (B|'{'{B}'}') [else (B|'{'{B}'}')] | ; | readln'('id')'; 
+| write(G); | writeln(G);
+G -> F | F,G
+
+Expressão
+
+F -> H (= | <> |<| > |<= | >=) H
+H -> [+|-]I {(+ | - | 'or')I} 
+I -> J{(* | 'and' | / | %)J}
+J -> (K | not K)
+K -> num | _char | '('F')' | id
+
+
+
+

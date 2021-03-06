@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21080\viewh13460\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 Implementa\'e7\'e3o do Tradutor\
+\
+In\'edcio\
+\
+Para cada s\'edmbolo n\'e3o terminal da gram\'e1tica, A, crie um procedimento A com par\'e2metros passados por valor para seus atributos herdados e por refer\'eancia para seu atributos sintetizados. \
+\
+Dentro do procedimento:\
+- Crie vari\'e1veis locais para os demais atributos dos s\'edmbolos das regras de A (considerar numera\'e7\'e3o)\
+- Escolha a regra a ser utilizada, baseado no token lido\
+- Dentro de cada regra:\
+ - - para cada token da regra, salve os seus atributos nas vari\'e1veis 		 locais e chame CasaToken(token)\
+ - - para cada s\'edmbolo n\'e3o terminal, chame o procedimento correspondente 		 passando como par\'e2metros os seus atributos (considerar numera\'e7\'e3o)\
+ - - para as Express\'f5es Regulares:\
+     A->\{w\}* : Repita enquanto token lido pertence a First(w): w\
+	 	 A->\{w\}+ : Repita w at\'e9 token lido n\'e3o pertencer a First(w)\
+     A->(w|u): Se token lido pertence a First(w):w sen\'e3o:u\
+		 A->[w|u]: Se token lido pertence a First(w):w sen\'e3o\
+								Se token lido pertence a First(u):u\
+ - - para cada a\'e7\'e3o sem\'e2ntica, copie na posi\'e7\'e3o onde est\'e1, trocando os 		 atributos pelas vari\'e1veis correspondentes.\
+\
+CasaToken(token_esperado)\
+  se token lido == token_esperado token lido = AnalisadorLexico()\
+  sen\'e3o ERRO\
+\
+Programa Principal\
+  token lido = AnalisadorLexico()\
+  S()\
+  se n\'e3o fim de string ERRO\
+}

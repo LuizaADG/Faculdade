@@ -1,0 +1,59 @@
+Curso de Ciencia da Computação
+Compiladores
+Número de matrícula: 587490 
+
+Teste 2
+
+Instruções: Verifique que a prova e o gabarito correspondem ao seu número de matrícula. 
+Cada posição indicada na gramática, da forma {n}, corresponde a 1 ou mais ações semânticas a serem inseridas no gabarito numeradas de forma sequencial como {n.1}, {n.2} etc. 
+Em cada uma dessas entradas do gabarito, coloque a letra/caractere da ação semântica correspondente, entre os colchetes. Ex: {1.1}=[A]. 
+Apenas as ações semânticas listadas abaixo podem ser usadas. Se achar que a posição não possui ação semântica, escolha a opção para a ação "VAZIA". 
+Fora a inserção do seu nome (sem quebra de linha) e das respostas entre os colchetes, nada mais pode ser alterado no gabarito, pois a correção é automática. 
+Após inserir as respostas, salve o gabarito sem alterar o nome do arquivo e poste no Canvas.
+
+Questão Única
+
+Considere o subconjunto da linguagem Pascal descrito na gramática abaixo, onde o comando "for id:=E to E1 do S" executa o bloco S enquanto id for diferente de E1. 
+O valor do contador id é iniciado com E e incrementado a cada iteração. 
+Selecione as ações para geração de código para o LCX, considerando apenas o tipo básico inteiro que ocupa 2 posições de memória.
+
+S -> begin { A ; | F ; }+ end
+A -> id := E {12}
+F -> for {7} id := E {1} to E1 {6} do S {9}
+E -> T {10} { - T1 {3} }
+T -> {4} num {2} | id {11} V {5}
+V -> “[“ E “]” {8} | lambda {13}
+
+
+Ações Semânticas:
+
+A = T.end:=NovoTemp
+B = add AX,AX
+C = Rot2:=NovoRot
+D = add AX,id.end
+E = cmp AX,BX
+F = mov AX,id.end
+G = mov DS:[id.end],AX
+H = Rot2:
+I = add AX,2
+J = je Rot2
+K = VAZIA
+L = mov BX,T1.val
+M = mov AX,id.val
+N = mov AX,DS:[E.end]
+O = mov AX,T.val
+P = mov DS:[T.end],AX
+Q = mov BX,DS:[T1.end]
+R = add AX,BX
+S = mov AX,0
+T = mov AX,E.val
+U = mov DS:[E.end],AX
+V = mov AX,DS:[id.end]
+X = mov AX,DS:[AX]
+W = add AX,1
+Y = Rot1:
+Z = neg BX
+@ = jmp Rot1
+# = mov AX,DS:[T.end]
+% = E.end:=T.end
+$ = mov AX,num.lex
