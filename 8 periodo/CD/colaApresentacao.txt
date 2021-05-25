@@ -1,0 +1,93 @@
+Slide 4
+A rede 5G móvel consiste em três tecnicas conectadas ao big data center facilitado pelo sistema de
+estação super base com distribuição MIMO massiva da infraestrutura de Cloud-RAN
+
+D2D - possibilita a comunicação entre dois dipositivos móveis sem uso da estação base. Beneficiente no
+aumento da área de espectro eficiente e cobertura de celular enquanto diminui atraso de fim-a-fim,
+consumo de energia e interferência celular.
+
+FD - BS transmite e recebe de diferentes dispositivos móveis simultaneamente usando o mesmo canal de
+frequência. Essa comunicação pode dobrar o espectro de eficiência de redes sem fio enquanto melhora
+a eficiência energética de comunicações sem fio. Nessas comunicações o dispositivo se comunica com o BS,
+o que possibilita transmissão e recepção simultânea usando o mesmo canal de frequência, aumentando a
+eficiência de redes móveis.
+
+CR - permite que usuários secundários transmitam dados com usuários licenciados em uma base 
+overlay ou underlay, com o usuário primário recebendo prioridade. Pode aumentar o espectro
+de eficiência e a eficiência energética.
+
+wireless coupling channels model, which consists of two transmitters (T1 and T2) and two receivers 
+(R1 and R2) sharing the same frequency band and time slot.
+
+D2D ->T1 e R1
+FD -> T1 e R2
+CR -> T1 e R1
+
+Slide 5
+teoria da capacidade efetiva - máxima taxa de chegada constante que pode ser suportada pela taxa de 
+serviço para garantir o limite de atraso estatístico em um canal sem fio.
+
+Exponente QoS denotado por 𑁜 é um número real positivo que acumula o relacionamento entre o limite
+do tamanho de uma fila e a probabilidade do tamanho da fila exceder o limite
+
+Precisa-se desenvolver o modelo homogêneo para otimizar a perfomance do sistema dado o expoente teta
+
+Slide 6
+𑁜1 and 𑁜2, corresponding to T1 and T2, respectively, need to be jointly guaranteed at the same time.
+Devido aos diferentes valores, é necessário providenciar juntamente o provisionamento para the links from
+T1 to R1 and from T2 to R2 simultaneously.
+
+Capacidade efetiva agregada - soma das capacidades efetivas correspondente aos links dos canais sem 
+fio. Deve ser maximizado para cada uma das técnicas de redes 5G.
+Alocação de recursos depende dos requerimentos QoS de todos as redes.
+
+Slide 7
+Co-canal: comunicações D2D e celular usam todo o recurso tempo-frequência da rede.
+Canal ortogonal: comunicação D2D usa parte do recurso de tempo-frequência e a comunicação celular usa a outra.
+
+Assim, podemos derivar as estratégias de alocação de potência ideais para maximizar as capacidades efetivas 
+agregadas, levando em consideração, em conjunto, 𑁜1 e 𑁜2 nos canais de acoplamento sem fio ao mesmo tempo 
+em redes D2D-5G.
+
+Podemos derivar as estratégias de alocação de energia ideal para maximizar a capacidade efetiva
+agregada sob os dois expoentes de QoS (𑁜1 e 𑁜2) para redes sem fio 5G baseadas em FD.
+
+A autointerferência impacta severamente as garantias de QoS limitado por atraso estatístico.
+Primeiro, a autointerferência diminui o SNR recebido dos dispositivos móveis, diminuindo assim a 
+capacidade efetiva das redes sem fio FD 5G.
+Em segundo lugar, a autointerferência aumenta a probabilidade de erro para estimativas de canal, 
+diminuindo também a capacidade efetiva de redes sem fio FD 5G
+
+Modo tolerante a interferências de redes sem fio CR, onde as comunicações entre o dispositivo primário e 
+BS primário e entre o dispositivo secundário e BS secundário são concorrente nos canais de 
+acoplamento sem fio, desde que a interferência causada pela comunicação secundária esteja abaixo do 
+limite / piso de ruído de interferência fornecido.
+
+Ao contrário das redes sem fio D2D- e FD-5G, onde os dois canais de acoplamento recebem a mesma prioridade, 
+o canal de comunicação primário precisa receber prioridade mais alta do que o canal de comunicação secundário, 
+o que também precisa ser levado em consideração ao determinar os valores de 𑁜1 e 𑁜2 em redes CR-5G.
+
+O esquema de provisionamento de QoS limitado por atraso estatístico homogêneo só pode ser usado para 
+redes sem fio CR 5G quando os requisitos de QoS limitado por atraso para os dispositivos primários e 
+secundários são iguais.
+
+Slide 8
+We set the bandwidth for the 5G networks B = 100 kHz and the fading parameter m of Nakagami-m 
+distribution with m = 2.
+
+D2D
+QoS exponent of the cellular communication (𑁜2) is set as 10^–2
+
+Homogêneo e heterogêneo obtêm a mesma capacidade efetiva agregada quando os dois tetas são iguais.
+Isso é esperado pois o modelo heterogêneo se reduz ao homogêneo quando as duas comunicações (D2D e celular)
+tem o mesmo requerimento de atraso QoS.
+
+FD
+Dois casos FD, 𑁜2 é 10^-2 e 𑁜2 é 10^-4.2. Quando os tetas são diferentes, o heterogêneo tem a capacidade
+efetiva agregada maior.
+
+CR
+Quando os tetas são diferentes, o heterogêneo tem a capacidade efetiva agregada maior.
+
+
+
