@@ -1,0 +1,19 @@
+01) Avalie a funcionalidade do Libre Office Writer: criação de documentos de diferentes formatos. 
+02) Avalie a funcionalidade do Libre Office Writer: opção de abrir documentos microsoft word e odt 
+sem desformatar os documentos.
+03) Avalie a funcionalidade do Libre Office Writer: opção de iteração com outros aplicativos 
+libre offices.
+04) Avalie a funcionalidade do Libre Office Writer: opção de bloquear a edição para outros usuários.
+05) Avalie a funcionalidade do Libre Office Impress: criação de slides e apresentação deles.
+06) Avalie a funcionalidade do Libre Office Impress: opção de abrir documentos powerpoint sem 
+desformatar os documentos.
+07) Avalie a funcionalidade do Libre Office Impress: opção de iteração com outros aplicativos 
+libre offices.
+08) Avalie a funcionalidade do Libre Office Impress: opção de bloquear a edição para outros usuários.
+09) Avalie a funcionalidade do Libre Office Calc: criação de planilhas em diferentes formatos.
+10) Avalie a funcionalidade do Libre Office Calc: opção de abrir documentos excel sem 
+desformatar os documentos.
+11) Avalie a funcionalidade do Libre Office Calc: opção de iteração com outros aplicativos 
+libre offices.
+12) Avalie a funcionalidade do Libre Office Calc: opção de bloquear a edição para outros usuários.
+
