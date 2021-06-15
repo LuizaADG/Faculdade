@@ -1,0 +1,17 @@
+Um agente conversacional é um sistema que interpreta e responde a instruções feitas pelo usuário em linguagem natural simples. Ele integra elementos de linguística computacional e comunicação pela internet.
+
+Existem dois tipos de agentes conversacionais:
+
+Chatbots: programa de computador que utiliza elementos da IA para simular uma conversação com seres humanos.
+
+Goal Based Dialog Agents (Agentes conversacionais baseados em objetivo), são projetados para tarefas específicas como os assistentes de carros a SIRI, Alexa, Google Assistant, etc. Eles normalmente seguem um fluxo de diálogo.
+
+A videoaula a seguir apresenta os principais conceitos relativos aos sistemas conversacionais, e as implicações éticas na sua construção.
+
+Como podemos ver, existem diversos aspectos éticos que devemos considerar. O mais importante, no entanto é garantir a segurança das pessoas que estão interagindo com o sistema de conversação:
+
+01) Sistema não pode dizer a coisa errada. Isso pode afetar as pessoas e causar danos psicológicos sérios.
+02) Sistema deve estar ciente do contexto de uso. O usuário não pode ser distraído em momentos de atenção e nem deve receber informações atrasadas ou desatualizadas em momentos de tomada de decisão (como sistemas de navegação, por exemplo).
+
+Treinamento de chatbots, em que o objetivo é ajustar o chatbot baseado nas falhas de conversações reais, tais como missing intents, ou intenções ausentes, entre outros problemas de interação. Esse estudo apresenta uma análise qualitativa dos 
+diálogos do Telmi, um chatbot do departamento de atendimento ao cliente da Telenor, uma grande operadora de telecomunicações da Noruega.

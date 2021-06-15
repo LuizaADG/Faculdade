@@ -1,0 +1,24 @@
+A etapa de aprendizado de máquina permite construir o modelo que será utilizado na tomada de decisão.
+
+Aprendizado supervisionado
+–Dado de treinamento possui rótulos conhecidos.
+–Cria modelo para fazer previsões e se autocorrige quando as previsões são ruins até atingir acurácia aceitável.
+
+Aprendizado não supervisionado
+–Dado não é rotulado ou não possui resultado conhecido.
+–Modelo deduz estruturas a partir da entrega.
+
+Aprendizado semisupervisionado
+–Mistura dados rotulados e não rotulados.
+Com a parte rotualda cria-se regras gerais. Usam-se ela na parte não rotulada.
+–Existe uma previsão desejável, mas modelo precisa organizar estruturas.
+
+Aprendizado por reforço
+-Passa só uma medida de desempenho, sem regras.
+–Um agente explorar um ambiente. A cada instante de tempo o agente está em um estado qualquer, executa uma ação, vai para um novo estado e recebe uma recompensa.
+–Problema da aprendizagem por reforço consiste em escolher uma política de ações que maximize o total de recompensas recebidas pelo agente.
+
+Aprendizado profundo (deep learning)
+–O aprendizado profundo também possui aprendizado supervisionado, não supervisionado e de reforço.
+–O objetivo é utilizar modelos de redes neurais extremamente complexos e com muitas camadas para identificar estruturas em problemas onde os dados não são claramente estruturados. 
+Adequado para extrair recursos significativos de dados brutos.

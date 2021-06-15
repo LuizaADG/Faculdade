@@ -1,0 +1,13 @@
+os chatbots podem ser classificados pelo seu nível de consciência.
+
+Menu/button chatbots: são o tipo mais básico de chatbot. Eles funcionam como se fossem uma árvore de decisão em que cada pergunta exige uma resposta entre um menu de opções.
+Keyword recognition chatbots (reconhecedores de palavra chave): Ao contrário dos chatbots menus, este conseguem capturar o que o usuário digita e responder apropriadamente, 
+desde que encontre palavras chave que identifiquem a intenção do locutor.
+Chatbots contextuais são os mais avançados, e utilizam aprendizado de máquina para lembrar conversas de usuários e aprender com o tempo. Em teoria, um chatbot contextual 
+poderia se lembrar de suas preferências e antecipá-las. Você poderia pedir Pizza em sua Pizzaria favorita simplesmente falando. "Olá, o de sempre!".
+
+Da perspectiva do negócio, a IBM propõe uma nova classificação para os tipos de chatbots de negócios.
+
+Support chatbot são construídos para serem especialistas em um domínio específico. São capazes de manter conversação.
+Skills chatbots não necessitam de ciência do contexto, e funcionam no modelo single-turn (pergunta e resposta, pergunta e resposta). Eles respondem a comandos.
+Assistant chatbots estão no nível intermediário entre os support chatbots e os skills chatbots, e podem versar sobre diferentes tópicos.
